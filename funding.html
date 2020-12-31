@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Lab Director (PI) | ASU-VLND</title>
+<title>Funding | ASU-VLND</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,6 +10,12 @@
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,button {font-family: "Montserrat", sans-serif}
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+li > span {
+  font-weight: normal;
+}
 </style>
 <body style="background-color: black;">
 
@@ -33,11 +39,11 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-container w3-dark-grey w3-card w3-large w3-center">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding w3-hover-black w3-large w3-dark-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Lab Director (PI)</a>
+    <a href="./labdirector.html" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Director (PI)</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Members</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Research</a>
     <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Publications</a>
-    <a href="./funding.html" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Funding</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Funding</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Technologies</a>
     <a href="./contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Contact Us</a>
     <a href="./links.html" class="w3-bar-item w3-button w3-hide-small w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Links</a>
@@ -46,11 +52,11 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Lab Director (PI)</a>
+    <a href="./labdirector.html" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Lab Director (PI)</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Lab Members</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Research</a>
     <a href="./publications.html" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Publications</a>
-    <a href="./" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Funding</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Funding</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Technologies</a>
     <a href="./contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Contact Us</a>
     <a href="./links.html" class="w3-bar-item w3-button w3-padding-large w3-hover-text-orange w3-hover-black">Links</a>
@@ -58,16 +64,18 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-container w3-black" style="padding-top: 50px;">
-    <div class="w3-content">
-      <div class="w3-hide-small" style="padding-top: 150px;"></div>
-      <div class="w3-hide-small w3-hide-large" style="padding-top: 43px;"></div>
-      <h1 class="w3-xxxlarge" style="margin-bottom: -16px;">Ramon Velazquez</h1>
-      <h5 class="w3-opacity-min"><b>Assistant Research Professor</b>, ASU-Banner Neurodegenerative Disease Research Center</h5>
-      <img src="RamonVelazquez.jpg" alt="Ramon Velazquez" class="w3-border w3-image" style="padding:8px;">
-      <h2>Biography</h2>
-      <p class="w3-opacity">Dr. Ramon Velazquez is an Assistant Research Professoratthe Neurodegenerative Disease Research Center at the Biodesign Institute - Arizona State University (ASU). His research interests include identifying novel therapeutic targets for neurodegenerative disorders such as Alzheimer’s disease (AD) and Down Syndrome (DS). In particular, he focuses on early molecular events that trigger the progression of these diseases. He is also interested in drug discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression. Dr. Velazquez received his doctoral degree at Cornell University, where he was funded by the National Science Foundation (NSF) Pre-Doctoral fellowship and completed his postdoctoral training in molecular biology and neuroscience at ASU, where he was independently funded by the Alzheimer’s Association. Additionally, he was funded through an NSF postdoctoral fellowship. Dr. Velazquez’s ultimate goal is to progress science while consecutively helping those who suffer from insidious neurodegenerative diseases.</p>
-    </div>
+<div class="w3-row-padding w3-container w3-black" style="padding-top: 70px;">
+  <div class="w3-content">
+    <div class="w3-hide-small" style="padding-top: 150px;"></div>
+    <div class="w3-hide-small w3-hide-large" style="padding-top: 43px;"></div>
+    <h1><b>Funding</b></h1>
+    <ol class="w3-opacity" style="font-weight: bold;">
+      <li>Edson Foundation Seed grant (ASU-Edson Foundation; PI Velazquez), $100,410 (2020-2022)<br><span>PI on a 2-year grant to determine if glyphosate exposure is associated with cognitive aging and Alzheimer’s Disease (AD).</span></li>
+      <li>IDSA - The Role of Microbe-induced Necroptotic Death in Tauopathy (PI Jacobs; Co-PI Velazquez), $100,000 (2020-2021)<br><span>Co-PI on a grant to determine mechanisms of cell death in Alzheimer’s disease and related tauopathies.</span></li>
+      <li>R01 AG062500 HHS: NIH (PI Velazquez) (2019-2024)<br><span>PI on a grant to identify how the ribosomal protein S6 kinase beta-1 (S6K1) mechanistically links aging and AD.</span></li>
+      <li>R01 AG059627 HHS: (NIH PI Velazquez) (2019-2023)<br><span>PI on a grant to identify common mechanisms of neurodegeneration between Down syndrome (DS) and AD.</span></li>
+    </ol>
+  </div>
 </div>
 
 <!-- Footer -->
