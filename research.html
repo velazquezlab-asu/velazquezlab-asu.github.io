@@ -12,7 +12,6 @@
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,button {font-family: "Montserrat", sans-serif}
-p.w3-opacity {text-align: justify;}
 .w3-sidebar {width: 200px;}
 @media screen and (max-width: 992px) {
   #content {
@@ -24,11 +23,14 @@ p.w3-opacity {text-align: justify;}
     max-width: 80%;
   }
 }
+img.w3-border {
+  padding: 8px;
+}
 </style>
 
 <head>
   <!-- Title and Icons -->
-  <title>Lab Director (PI) | ASU-VLoND</title>
+  <title>Research | ASU-VLoND</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -57,9 +59,9 @@ p.w3-opacity {text-align: justify;}
     <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
   </div>
   <a href="./index.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Home</a>
-  <a href="#" onclick="close_sidebar()" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Lab Director (PI)</a>
+  <a href="./labdirector.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Director (PI)</a>
   <a href="./labmembers.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Members</a>
-  <a href="./research.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Research</a>
+  <a href="#" onclick="close_sidebar()" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Research</a>
   <a href="./publications.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Publications</a>
   <a href="./funding.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Funding</a>
   <a href="./contact.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Contact Us</a>
@@ -75,18 +77,48 @@ p.w3-opacity {text-align: justify;}
   <!-- First Grid -->
   <div style="padding-top: 76px; padding-bottom: 32px;">
     <div id="content" class="w3-content w3-padding-small w3-text-white">
-      <h1 class="w3-xxxlarge" style="margin-bottom: -16px;">Ramon Velazquez</h1>
-      <h5 class="w3-opacity-min"><b>Assistant Research Professor</b>, ASU-Banner Neurodegenerative Disease Research Center</h5>
-      <img src="lab_director/ramon_velazquez.png" alt="Ramon Velazquez" class="w3-border w3-image" style="padding:8px;">
-      <h2>Biography</h2>
-      <p class="w3-opacity">Dr. Ramon Velazquez is an Assistant Research Professor at the Neurodegenerative Disease Research Center at the Biodesign Institute - Arizona State University (ASU). Dr. Velazquez research interests include identifying novel therapeutic targets for neurodegenerative disorders such as Alzheimer’s disease (AD) and Down Syndrome (DS). In particular, he focuses on early molecular events that are triggered by environmental factors that induce the progression of the disease. Dr. Velazquez is also interested in drug discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression. Dr. Velazquez received his doctoral degree at Cornell University in 2014, where he was funded by the National Science Foundation (NSF) Pre-Doctoral fellowship and completed his postdoctoral training in molecular biology and neuroscience at ASU, where he was independently funded by the Alzheimer’s Association. Additionally, he was funded through an NSF postdoctoral fellowship. Dr. Velazquez’s ultimate goal is to advance science while consecutively helping those who suffer from insidious neurodegenerative diseases.</p>
-      <p class="w3-opacity">Teaching and mentorship are particularly important to Dr. Velazquez in order to reach his ultimate goal of progressing science and having a large impact on the community.  Dr. Velazquez has over 13 years of teaching experience, including serving as a teaching assistant while he was an undergraduate at California State University Long Beach and also developed and taught courses on mental illness and neurodegeneration as a graduate student at Cornell university. Currently, at ASU, Dr. Velazquez serves as a guest lecture for Neurobiology and Memory courses every semester.  Dr. Velazquez philosophy when teaching is not to simply reiterate information from a textbook, but to get students excited about the topics at hand by providing real world examples that students can relate to and radiating excitement during lectures.</p>
+      <h1><b>Research</b></h1>
+
+      <h5>The VLoND Laboratory Uses a Variety of Model Symptoms, which Include:</h5>
+      <p class="w3-opacity">Post-mortem brain tissue from patients with Down syndrome and Alzheimer’s disease.</p>
+      <img src="research/normal_vs_alzheimers.png" alt="Normal Brain vs Alzheimer’s Brain" class="w3-border w3-image">
+
+      <p class="w3-opacity">The VLoND is heavily focused on using transgenic mouse models of neurodegenerative disorders. </p>
+      <img src="research/mice.png" alt="Mice" class="w3-border w3-image">
+
+      <h5 class="w3-padding-top-32">Mouse Models Used in Our Lab</h5>
+      <ul class="w3-opacity">
+        <li>PS19 (P301s mutation) – tau pathology</li>
+        <li>3xTg-AD (PS1, APP, and MAPT mutations) – Amyloid-ß and tau pathology</li>
+        <li>APPswe/PS1dE9 (APP and PS1 mutations) – Aß pathology</li>
+        <li>Ts65Dn (Down syndrome model) – basal forebrain cholinergic neuron loss and neurogenesis deficits</li>
+      </ul>
+      <p class="w3-opacity"><a href="https://www.jax.org/">The Jackson Laboratory</a></p>
+
+      <h5 class="w3-padding-top-32">Behavioral assessment in mice</h5>
+      <p class="w3-opacity">We specialize in a wide variety of behavioral assessment tools to assess cognition and motor function in our mouse models</p>
+
+      <p class="w3-opacity w3-padding-top-32"><u>The Rotarod</u> - motor coordination and endurance assessment</p>
+      <img src="research/rotarod.gif" alt="Rotarod Demo" class="w3-border w3-image">
+      
+      <p class="w3-opacity w3-padding-top-32"><u>The Morris Water Maze</u> - hippocampal dependent spatial reference learning and memory</p>
+      <img src="research/water_maze.png" alt="Morris Water Maze" class="w3-border w3-image">
+      <p class="w3-opacity"><a href="https://www.noldus.com/applications/morris-water-maze?gclid=CjwKCAiA_9r_BRBZEiwAHZ_v14L04GM7946e_jiHwD3BbArBOd8SbQMTIKfCLGVQuaqtPesAK-K5yBoCpboQAvD_BwE">Click to learn more about the Morris Water Maze</a></p>
+
+      <p class="w3-opacity w3-padding-top-32"><u>The Fully Automated IntelliCage System</u> - The IntelliCage circumvents issues of traditional behavioral tests, such as reducing human handling and stress and standardizing experiment protocols. Animals engage in behavioral tasks, using access to water as their incentive to participate. Each IntelliCage fits up to 16 mice per cage, which are each identified via a radiofrequency Identifier. Each cage contains four corners, which have LEDs, and two nose ports with motorized doors that provide access to water. Programming access to the water allows animals to be tested on a series of behavioral domains.</p>
+      <img src="research/intellicage.png" alt="Intellicage" class="w3-border w3-image">
+      <p class="w3-opacity"><a href="https://www.tse-systems.com/product-details/intellicage">Click to learn more about the Intellicage</a></p>
+
+      <h5 class="w3-padding-top-32">Genetic Modulation of Novel Therapeutic Targets with Adeno-Associated Viruses (AAV)</h5>
+      <p class="w3-opacity">The VLoND has the ability to develop a variety of AAV serotypes to specifically modulated key targets to assess mechanistic links in <i>vivo</i>.</p>
+      <img src="research/aav_serotypes.png" alt="AAV Serotypes" class="w3-border w3-image">
+
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-center w3-black">
-  <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
 
 </div>

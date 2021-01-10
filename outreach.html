@@ -12,7 +12,6 @@
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,button {font-family: "Montserrat", sans-serif}
-p.w3-opacity {text-align: justify;}
 .w3-sidebar {width: 200px;}
 @media screen and (max-width: 992px) {
   #content {
@@ -21,14 +20,28 @@ p.w3-opacity {text-align: justify;}
 }
 @media screen and (min-width: 993px) {
   #content {
-    max-width: 80%;
+    max-width: 80%; 
   }
+}
+img.w3-border {
+  padding: 8px;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+div.grid > div {
+  padding: 16px;
 }
 </style>
 
 <head>
   <!-- Title and Icons -->
-  <title>Lab Director (PI) | ASU-VLoND</title>
+  <title>Outreach | ASU-VLoND</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -57,13 +70,13 @@ p.w3-opacity {text-align: justify;}
     <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
   </div>
   <a href="./index.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Home</a>
-  <a href="#" onclick="close_sidebar()" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Lab Director (PI)</a>
+  <a href="./labdirector.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Director (PI)</a>
   <a href="./labmembers.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Members</a>
   <a href="./research.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Research</a>
   <a href="./publications.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Publications</a>
   <a href="./funding.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Funding</a>
   <a href="./contact.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Contact Us</a>
-  <a href="./outreach.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Outreach</a>
+  <a href="#" onclick="close_sidebar()" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Outreach</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -75,20 +88,60 @@ p.w3-opacity {text-align: justify;}
   <!-- First Grid -->
   <div style="padding-top: 76px; padding-bottom: 32px;">
     <div id="content" class="w3-content w3-padding-small w3-text-white">
-      <h1 class="w3-xxxlarge" style="margin-bottom: -16px;">Ramon Velazquez</h1>
-      <h5 class="w3-opacity-min"><b>Assistant Research Professor</b>, ASU-Banner Neurodegenerative Disease Research Center</h5>
-      <img src="lab_director/ramon_velazquez.png" alt="Ramon Velazquez" class="w3-border w3-image" style="padding:8px;">
-      <h2>Biography</h2>
-      <p class="w3-opacity">Dr. Ramon Velazquez is an Assistant Research Professor at the Neurodegenerative Disease Research Center at the Biodesign Institute - Arizona State University (ASU). Dr. Velazquez research interests include identifying novel therapeutic targets for neurodegenerative disorders such as Alzheimer’s disease (AD) and Down Syndrome (DS). In particular, he focuses on early molecular events that are triggered by environmental factors that induce the progression of the disease. Dr. Velazquez is also interested in drug discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression. Dr. Velazquez received his doctoral degree at Cornell University in 2014, where he was funded by the National Science Foundation (NSF) Pre-Doctoral fellowship and completed his postdoctoral training in molecular biology and neuroscience at ASU, where he was independently funded by the Alzheimer’s Association. Additionally, he was funded through an NSF postdoctoral fellowship. Dr. Velazquez’s ultimate goal is to advance science while consecutively helping those who suffer from insidious neurodegenerative diseases.</p>
-      <p class="w3-opacity">Teaching and mentorship are particularly important to Dr. Velazquez in order to reach his ultimate goal of progressing science and having a large impact on the community.  Dr. Velazquez has over 13 years of teaching experience, including serving as a teaching assistant while he was an undergraduate at California State University Long Beach and also developed and taught courses on mental illness and neurodegeneration as a graduate student at Cornell university. Currently, at ASU, Dr. Velazquez serves as a guest lecture for Neurobiology and Memory courses every semester.  Dr. Velazquez philosophy when teaching is not to simply reiterate information from a textbook, but to get students excited about the topics at hand by providing real world examples that students can relate to and radiating excitement during lectures.</p>
+      <h1><b>Outreach</b></h1>
+
+      <p class="w3-opacity">Members of the VLND lab participate in various outreach programs every year to ensure community embeddedness. We participate in the following yearly events to both get the new generation excited about our research and to help raise funds for Alzheimer’s disease.</p>
+
+      <h3 class="w3-padding-top-32">ASU Open Door at the Biodesign Institute</h3>
+      <div class="w3-row">
+        <p class="w3-col l9 m8 w3-opacity">This annual event brings thousands of adults and children from the community to explore the ASU campus and participate in myriad interactive exhibits and activities showcasing the innovations that normally occur inside laboratories, classrooms, etc. The Velazquez lab volunteered in 2020 with brain hats, custom coloring postcards, and presentations on the lab’s research and Alzheimer’s disease in general.</p>
+        <div class="w3-col l3 m4 w3-padding w3-center">
+          <a href="https://biodesign.asu.edu/opendoor">
+            <img src="outreach/open_door.png" alt="ASU Open Door Logo" class="w3-border w3-image">
+            <p class="w3-opacity">Click to learn more about ASU Open Door</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <img src="outreach/vlond_at_open_door.png" alt="VLoND at the 2020 ASU Open-Door Event" class="w3-image w3-border">
+        </div>
+        <div>
+          <img src="outreach/drawings_open_door.png" alt="Drawings at the 2020 ASU Open-Door Event" class="w3-image w3-border">
+        </div>
+        <div>
+          <img src="outreach/drawings_open_door_2.png" alt="Child drawing at the 2020 ASU Open-Door Event" class="w3-image w3-border">
+        </div>
+        <div>
+          <img src="outreach/brain_open_door.png" alt="Brain at the 2020 ASU Open-Door Event" class="w3-image w3-border">
+        </div>
+      </div>
+
+      <h3 class="w3-padding-top-32">Walk to End Alzheimer’s – Alzheimer’s Association</h3>
+      <div class="w3-row">
+        <p class="w3-col l9 m8 w3-opacity">The Alzheimer’s Association hosts this annual charity walk to raise awareness and funds for Alzheimer’s care, research and advocacy. In 2020 the Velazquez Lab (on behalf of the Biodesign NDRC) raised over $400 and lab team members participated in the walk virtually.</p>
+        <div class="w3-col l3 m4 w3-padding w3-center">
+          <a href="https://act.alz.org/site/TR?fr_id=13269&pg=team&team_id=643559">
+            <img src="outreach/walk_to_end_alzheimers.png" alt="Walk to End Alzheimer's Logo" class="w3-border w3-image">
+            <p class="w3-opacity">Click to learn more about The Walk to End Alzheimer’s</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <img src="outreach/alz_walk.png" alt="Alzheimer’s Association Phoenix AZ Walk 2019" class="w3-image w3-border">
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-center w3-black">
-  <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
-
+  
 </div>
 
 <script>

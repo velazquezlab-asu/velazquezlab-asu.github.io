@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,button {font-family: "Montserrat", sans-serif}
+.w3-sidebar {width: 200px;}
+@media screen and (max-width: 992px) {
+  #content {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 993px) {
+  #content {
+    max-width: 80%;
+  }
+}
+#members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 332px; 
+  padding: 16px;
+}
+.grow { 
+transition: all .15s ease-in-out; 
+}
+.grow:hover { 
+transform: scale(1.1); 
+}
+</style>
+
+<head>
+  <!-- Title and Icons -->
+  <title>Lab Members | ASU-VLoND</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body style="background-color: black;">
+
+<!-- Header -->
+<header class="w3-dark-grey w3-top w3-text-white">
+  <div class="w3-main w3-display-container" style="height: 50px; margin-left: 200px;">
+    <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
+    <div class="w3-display-middle">
+      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases</b></h3>
+    </div>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large w3-center" style="z-index: 3;">
+  <a href="javascript:void(0)" onclick="close_sidebar()" class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close Menu</a>
+  <div class="w3-container w3-padding-32">
+    <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
+  </div>
+  <a href="./index.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Home</a>
+  <a href="./labdirector.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Lab Director (PI)</a>
+  <a href="#" onclick="close_sidebar()" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black">Lab Members</a>
+  <a href="./research.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Research</a>
+  <a href="./publications.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Publications</a>
+  <a href="./funding.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Funding</a>
+  <a href="./contact.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Contact Us</a>
+  <a href="./outreach.html" class="w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Outreach</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
+
+<!-- Indent main content -->
+<div class="w3-main" style="margin-left: 200px;">
+
+  <!-- First Grid -->
+  <div style="padding-top: 76px; padding-bottom: 32px;">
+    <div id="content" class="w3-content w3-padding-small w3-text-white">
+      <h1><b>Lab Members</b></h1>
+        <div id="members" class="w3-padding-top-16">
+
+          <div class="card grow">
+            <img src="lab_members/jessica.png" alt="Jessica Judd Ph.D." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Jessica Judd Ph.D.</h3>
+              <h5 class="w3-opacity-min">Edson Post-doctoral Scholar</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/joanna.png" alt="Joanna Winstone B.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Joanna Winstone B.S.</h3>
+                <h5 class="w3-opacity-min">ASU IDNP Graduate Student</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/wendy.png" alt="Wendy Winslow B.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Wendy Winslow B.S.</h3>
+              <h5 class="w3-opacity-min">Laboratory Manager</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/austin.png" alt="Austin S. Vural M.A." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Austin S. Vural M.A.</h3>
+              <h5 class="w3-opacity-min">Research Specialist</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/savannah.png" alt="Savannah Tallino M.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Savannah Tallino M.S.</h3>
+              <h5 class="w3-opacity-min">Research Specialist</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/annika.png" alt="Annika Decker B.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Annika Decker B.S.</h3>
+              <h5 class="w3-opacity-min">Research Technician</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/samantha.png" alt="Samantha Bartholomew B.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h4 style="margin-bottom: -14px;">Samantha Bartholomew B.S.</h4>
+              <h5 class="w3-opacity-min">Research Technician</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/megan.png" alt="Megan Donnay B.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Megan Donnay B.S.</h3>
+              <h5 class="w3-opacity-min">Research Technician</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/nikhil.png" alt="Nikhil Dave (Arizona Board of Regents)" class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h4 style="margin-bottom: -14px;">Nikhil Dave (Arizona Board of Regents)</h4>
+              <h5 class="w3-opacity-min">Undergraduate research assistant</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/oscar.png" alt="Oscar Villareal B.S." class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Oscar Villareal B.S.</h3>
+              <h5 class="w3-opacity-min">Research Volunteer</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/ian.png" alt="Ian McDonough (SW IV)" class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h4 style="margin-bottom: -14px;">Ian McDonough (SW IV)</h4>
+              <h6 class="w3-opacity-min">Automated Behavioral System Programmer (Python)</h6>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/mara.png" alt="Mara-Clarisa Boiangiu" class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Mara-Clarisa Boiangiu</h3>
+              <h5 class="w3-opacity-min">Barrett Honors College Undergraduate</h5>
+            </div>
+          </div>
+
+          <div class="card grow">
+            <img src="lab_members/rocio.png" alt="Rocio Lopez" class="w3-image">
+            <div class="w3-container w3-center w3-dark-grey">
+              <h3 style="margin-bottom: -14px;">Rocio Lopez</h3>
+              <h6 class="w3-opacity-min">Barrett Honors College Undergraduate<br>Neuroscience Scholars Program</h6>
+          </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-black">
+    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+  
+</div>
+
+<script>
+// Script to open and close sidebar
+function open_sidebar() {
+  document.getElementById("sidebar").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+  
+function close_sidebar() {
+  document.getElementById("sidebar").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
