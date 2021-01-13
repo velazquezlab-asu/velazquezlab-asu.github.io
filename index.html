@@ -19,11 +19,17 @@ p.w3-opacity {text-align: justify;}
   #content {
     max-width: 80%; 
   }
-  #dye {
-    max-width: 55%;
+  #rbbp7 {
+    max-width: 70%;
   }
   #pim1 {
     max-width: 60%;
+  }
+  #mouse {
+    max-width: 30%;
+  }
+  #foods {
+    max-width: 35%;
   }
 }
 /* Medium Screen */
@@ -31,11 +37,17 @@ p.w3-opacity {text-align: justify;}
   #content {
     max-width: 100%;
   }
-  #dye {
-    max-width: 55%;
+  #rbbp7 {
+    max-width: 70%;
   }
   #pim1 {
     max-width: 60%;
+  }
+  #mouse {
+    max-width: 30%;
+  }
+  #foods {
+    max-width: 35%;
   }
 }
 /* Small Screen */
@@ -43,7 +55,7 @@ p.w3-opacity {text-align: justify;}
   #content {
     max-width: 100%;
   }
-  #dye {
+  #rbbp7 {
     width: 100%;
   }
   #pim1 {
@@ -51,6 +63,15 @@ p.w3-opacity {text-align: justify;}
   }
   #brain {
     max-width: 50%;
+  }
+  #mouse {
+    max-width: 100%;
+  }
+  #foods {
+    max-width: 100%;
+  }
+  #choline-text {
+    clear: both;
   }
 }
 img.w3-border {
@@ -77,7 +98,7 @@ img.w3-border {
   <div class="w3-main w3-display-container" style="height: 50px; margin-left: 200px;">
     <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
     <div class="w3-display-middle">
-      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases</b></h3>
+      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
     </div>
   </div>
 </header>
@@ -116,8 +137,12 @@ img.w3-border {
         <h1 class="w3-padding-top-32"><b>Current Projects</b></h1>
 
         <h5>Determine Whether Widespread Dietary Choline Deficiency Increases Alzheimer’s Disease Risk</h5>
-        <img src="index/mouse.png" alt="Mouse" align="left" class="w3-border w3-image" style="max-width: 40%; margin: 10px 10px 0px 0px;">
-        <p class="w3-opacity">Choline, a key nutrient found in common foods, is required to produce acetylcholine, a neurotransmitter responsible for memory, muscle control and mood. It also builds cell membranes and plays a vital role in regulating gene expression. Choline is also a primary dietary source of methyl groups converting homocysteine (Hcy), a toxic amino acid, to methionine. Notably, elevated levels of Hcy increases the risk of developing AD and has been mechanistically linked to the production of Aβ plaques. While humans and rodents can produce endogenous choline, these levels fail to meet bodily demands, requiring dietary consumption. In 1998, the U.S. established an adequate intake (AI) of dietary choline per day for adult women (425mg/day) and  men (550mg/day) to deter from fatty liver disease. However, a converging line of evidence in both rodent models and humans indicates that the current AI may not be optimal for proper brain health and cognition, given choline’s role in the brain. Decades of research, including many of our publications, have shown that supplementing the maternal diet (during gestation and lactation) with 4.5x the AI of choline produces profound benefits on the offspring’s brain health and cognition. In particular, these studies have demonstrated amelioration of cognitive deficits in mouse models of Down syndrome and AD. Most recently, it has been shown that a lifelong regimen of choline supplementation from early to late adulthood reduces brain inflammation, Aβ plaque burden, and associated cognitive deficits in male and female AD mice.   While a vast majority of choline research has focused on its supplementation effects to reduce cognitive deficits and AD pathology, epidemiology studies show that a shocking 90% of Americans fail to reach the daily AI. This results in a twofold problem; 1) most Americans are choline deficient and 2) the current choline AI per day is not optimal for brain health. Thus, it is imperative to determine whether a diet deficient in choline throughout life increases the risk of AD. Establishing whether dietary choline deficiency increases AD pathology will provide much needed information on the need of choline in the daily diet for the general population to reduce AD risk.</p>
+        
+        <img id="mouse" src="index/mouse.png" alt="Mouse" class="w3-border w3-image" style="margin: 10px 10px 0px 0px; float: left;">
+        <img id="foods" src="index/choline_foods.png" alt="Foods Rich in Choline" class="w3-border w3-image" style="margin: 10px 10px 0px 0px; float: left; clear: left;">
+        <p id="choline-text" class="w3-opacity">
+          Choline, a key nutrient found in common foods, is required to produce acetylcholine, a neurotransmitter responsible for memory, muscle control and mood. It also builds cell membranes and plays a vital role in regulating gene expression. Choline is also a primary dietary source of methyl groups converting homocysteine (Hcy), a toxic amino acid, to methionine. Notably, elevated levels of Hcy increases the risk of developing AD and has been mechanistically linked to the production of Aβ plaques. While humans and rodents can produce endogenous choline, these levels fail to meet bodily demands, requiring dietary consumption. In 1998, the U.S. established an adequate intake (AI) of dietary choline per day for adult women (425mg/day) and  men (550mg/day) to deter from fatty liver disease. However, a converging line of evidence in both rodent models and humans indicates that the current AI may not be optimal for proper brain health and cognition, given choline’s role in the brain. Decades of research, including many of our publications, have shown that supplementing the maternal diet (during gestation and lactation) with 4.5x the AI of choline produces profound benefits on the offspring’s brain health and cognition. In particular, these studies have demonstrated amelioration of cognitive deficits in mouse models of Down syndrome and AD. Most recently, it has been shown that a lifelong regimen of choline supplementation from early to late adulthood reduces brain inflammation, Aβ plaque burden, and associated cognitive deficits in male and female AD mice.   While a vast majority of choline research has focused on its supplementation effects to reduce cognitive deficits and AD pathology, epidemiology studies show that a shocking 90% of Americans fail to reach the daily AI. This results in a twofold problem; 1) most Americans are choline deficient and 2) the current choline AI per day is not optimal for brain health. Thus, it is imperative to determine whether a diet deficient in choline throughout life increases the risk of AD. Establishing whether dietary choline deficiency increases AD pathology will provide much needed information on the need of choline in the daily diet for the general population to reduce AD risk.
+        </p>
 
         <div style="display: inline-block;">
           <h5 class="w3-padding-top-32">Glyphosate Exposure a Risk Factor for Cognitive Aging and Alzheimer’s Disease</h5>
@@ -129,7 +154,7 @@ img.w3-border {
         <div style="display: inline-block;">
           <h5 class="w3-padding-top-32">Identification of the Retinoblastoma Binding Protein 7 (Rbbp7) as a Mediator of Tau Pathology in Alzheimer’s Disease</h5>
 
-          <img id="dye" src="index/dye_picture.png" align="left" class="w3-border w3-image" style="margin: 10px 10px 5px 0px; max-height: 700px;">
+          <img id="rbbp7" src="index/rbbp7.png" align="left" class="w3-border w3-image" style="margin: 10px 10px 5px 0px;">
           <p class="w3-opacity">Evidence indicates that tau hyperphosphorylation and subsequent neurofibrillary tangles contribute to the extensive neuronal death in Alzheimer’s Disease (AD) and related tauopathies. However, the complete mechanisms underlying this pathogenesis remains elusive. Work has highlighted the role of the epigenome in tau pathogenesis, suggesting that dysregulation of epigenetic proteins may contribute to acetylation and hyperphosphorylation of cytoplasmic tau. Several epigenetic complexes have been implicated in epigenomic dysfunction related to tauopathies. We have identified the histone-binding subunit of the Nucleosome Remodeling and Deacetylase complex: Retinoblastoma Binding Protein 7 (Rbbp7).  Rbbp7 chaperones several chromatin remodeling proteins to their nuclear histone substrates, including histone acetylases and deacetylases. Notably, Rbbp7 binds to chromatin remodeling factors which have been implicated to increase the secretion of tau, including p300/CBP. We have interrogated Rbbp7 in post-mortem brain tissue, cell lines and mouse models of AD and have found reduced mRNA Rbbp7 expression in AD cases and a significant negative correlation with Braak Staging, a measure of pathogenic tau inclusions. Rbbp7 protein levels are significantly decreased in 3xTg-AD and PS19 compared to NonTg mice, but no decreases are seen in APP/PS1 mice that lack tau mutations. Hippocampal overexpression of Rbbp7 rescues neuronal death and reduced pathological tau markers in PS19 mice. Collectively, we identify a novel role of Rbbp7 in protecting against tau-related pathologies and highlight its potential as a therapeutic target in AD and related tauopathies.</p>
         </div>
 
