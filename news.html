@@ -5,24 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,button {font-family: "Montserrat", sans-serif}
-.w3-sidebar {width: 200px;}
-@media screen and (max-width: 992px) {
-  #content {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 993px) {
-  #content {
-    max-width: 80%;
-  }
-}
 </style>
 
 <head>
@@ -37,11 +25,11 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-color: black;">
+<body>
 
 <!-- Header -->
 <header class="w3-dark-grey w3-top w3-text-white">
-  <div class="w3-main w3-display-container" style="height: 50px; margin-left: 200px;">
+  <div class="w3-main w3-display-container" style="height: 50px;">
     <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
     <div class="w3-display-middle">
       <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
@@ -70,40 +58,25 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
 
 <!-- Indent main content -->
-<div class="w3-main" style="margin-left: 200px;">
+<div class="w3-main">
+  <div id="content" class="w3-content">
+    <h1><b>News Links</b></h1>
 
-  <!-- First Grid -->
-  <div style="padding-top: 76px; padding-bottom: 32px;">
-    <div id="content" class="w3-content w3-padding-small w3-text-white">
-      <h1><b>News Links</b></h1>
-
-      <p class="w3-opacity"><a href="https://azpbs.org/horizon/2019/10/asu-researchers-looking-at-common-supplement-to-battle-alzheimers/?fbclid=IwAR0euN5l_CgP4r7pn_l2XDGY6RCinwliK_5XHh5e6Ff2nRfLBtFTEy7G2NY">ASU researchers looking at common supplement to battle Alzheimer’s</a></p>
-      <p class="w3-opacity"><a href="https://www.sciencedaily.com/releases/2019/09/190927122526.htm">Common nutrient supplementation may hold the answers to combating Alzheimer's disease</a></p>
-      <p class="w3-opacity"><a href="https://www.sciencedaily.com/releases/2019/01/190108084424.htm">Science Daily - Essential nutrient may help fight Alzheimer's across generations</a></p>
-      <p class="w3-opacity"><a href="https://asunow.asu.edu/20190108-essential-nutrient-may-help-fight-alzheimers-across-generations">ASU - Essential nutrient may help fight Alzheimer’s across generations</a></p>
-      <p class="w3-opacity"><a href="https://news.cornell.edu/stories/2013/09/more-choline-mom-decreases-down-syndrome-effects">More choline for mom decreases Down syndrome effects</a></p>
-    </div>
+    <p class="w3-opacity"><a href="https://azpbs.org/horizon/2019/10/asu-researchers-looking-at-common-supplement-to-battle-alzheimers/?fbclid=IwAR0euN5l_CgP4r7pn_l2XDGY6RCinwliK_5XHh5e6Ff2nRfLBtFTEy7G2NY">ASU researchers looking at common supplement to battle Alzheimer’s</a></p>
+    <p class="w3-opacity"><a href="https://www.sciencedaily.com/releases/2019/09/190927122526.htm">Common nutrient supplementation may hold the answers to combating Alzheimer's disease</a></p>
+    <p class="w3-opacity"><a href="https://www.sciencedaily.com/releases/2019/01/190108084424.htm">Science Daily - Essential nutrient may help fight Alzheimer's across generations</a></p>
+    <p class="w3-opacity"><a href="https://asunow.asu.edu/20190108-essential-nutrient-may-help-fight-alzheimers-across-generations">ASU - Essential nutrient may help fight Alzheimer’s across generations</a></p>
+    <p class="w3-opacity"><a href="https://news.cornell.edu/stories/2013/09/more-choline-mom-decreases-down-syndrome-effects">More choline for mom decreases Down syndrome effects</a></p>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-center w3-black">
+  <footer>
     <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
-
 </div>
 
-<script>
-// Script to open and close sidebar
-function open_sidebar() {
-  document.getElementById("sidebar").style.display = "block";
-  document.getElementById("overlay").style.display = "block";
-}
-  
-function close_sidebar() {
-  document.getElementById("sidebar").style.display = "none";
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
+<!-- Script to open and close sidebar -->
+<script src="sidebar.js"></script>
 
 </body>
 </html>

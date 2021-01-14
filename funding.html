@@ -5,30 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,button {font-family: "Montserrat", sans-serif}
-.w3-sidebar {width: 200px;}
-@media screen and (max-width: 992px) {
-  #content {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 993px) {
-  #content {
-    max-width: 80%;
-  }
-}
-li:not(:last-child) {
-    margin-bottom: 10px;
-}
-li > span {
-  font-weight: normal;
-}
 </style>
 
 <head>
@@ -43,11 +25,11 @@ li > span {
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-color: black;">
+<body>
 
 <!-- Header -->
 <header class="w3-dark-grey w3-top w3-text-white">
-  <div class="w3-main w3-display-container" style="height: 50px; margin-left: 200px;">
+  <div class="w3-main w3-display-container" style="height: 50px;">
     <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
     <div class="w3-display-middle">
       <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
@@ -76,40 +58,25 @@ li > span {
 <div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
 
 <!-- Indent main content -->
-<div class="w3-main" style="margin-left: 200px;">
-
-  <!-- First Grid -->
-  <div style="padding-top: 76px; padding-bottom: 32px;">
-    <div id="content" class="w3-content w3-padding-small w3-text-white">
-      <h1><b>Funding</b></h1>
-      <ol class="w3-opacity" style="font-weight: bold;">
-        <li>Edson Foundation Seed grant (ASU-Edson Foundation; PI Velazquez), $100,410 (2020-2022)<br><span>PI on a 2-year grant to determine if glyphosate exposure is associated with cognitive aging and Alzheimer’s Disease (AD).</span></li>
-        <li>IDSA - The Role of Microbe-induced Necroptotic Death in Tauopathy (PI Jacobs; Co-PI Velazquez), $100,000 (2020-2021)<br><span>Co-PI on a grant to determine mechanisms of cell death in Alzheimer’s disease and related tauopathies.</span></li>
-        <li>R01 AG062500 HHS: NIH (PI Velazquez) (2019-2024)<br><span>PI on a grant to identify how the ribosomal protein S6 kinase beta-1 (S6K1) mechanistically links aging and AD.</span></li>
-        <li>R01 AG059627 HHS: (NIH PI Velazquez) (2019-2023)<br><span>PI on a grant to identify common mechanisms of neurodegeneration between Down syndrome (DS) and AD.</span></li>
-      </ol>
-    </div>
+<div class="w3-main">
+  <div id="content" class="w3-content">
+    <h1><b>Funding</b></h1>
+    <ol class="bold spaced w3-opacity">
+      <li>Edson Foundation Seed grant (ASU-Edson Foundation; PI Velazquez), $100,410 (2020-2022)<br><span>PI on a 2-year grant to determine if glyphosate exposure is associated with cognitive aging and Alzheimer’s Disease (AD).</span></li>
+      <li>IDSA - The Role of Microbe-induced Necroptotic Death in Tauopathy (PI Jacobs; Co-PI Velazquez), $100,000 (2020-2021)<br><span>Co-PI on a grant to determine mechanisms of cell death in Alzheimer’s disease and related tauopathies.</span></li>
+      <li>R01 AG062500 HHS: NIH (PI Velazquez) (2019-2024)<br><span>PI on a grant to identify how the ribosomal protein S6 kinase beta-1 (S6K1) mechanistically links aging and AD.</span></li>
+      <li>R01 AG059627 HHS: (NIH PI Velazquez) (2019-2023)<br><span>PI on a grant to identify common mechanisms of neurodegeneration between Down syndrome (DS) and AD.</span></li>
+    </ol>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-center w3-black">
+  <footer>
     <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
-
 </div>
 
-<script>
-// Script to open and close sidebar
-function open_sidebar() {
-  document.getElementById("sidebar").style.display = "block";
-  document.getElementById("overlay").style.display = "block";
-}
-  
-function close_sidebar() {
-  document.getElementById("sidebar").style.display = "none";
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
+<!-- Script to open and close sidebar -->
+<script src="sidebar.js"></script>
 
 </body>
 </html>

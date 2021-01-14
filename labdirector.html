@@ -5,25 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,button {font-family: "Montserrat", sans-serif}
-p.w3-opacity {text-align: justify;}
-.w3-sidebar {width: 200px;}
-@media screen and (max-width: 992px) {
-  #content {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 993px) {
-  #content {
-    max-width: 80%;
-  }
-}
 </style>
 
 <head>
@@ -38,11 +25,11 @@ p.w3-opacity {text-align: justify;}
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-color: black;">
+<body>
 
 <!-- Header -->
 <header class="w3-dark-grey w3-top w3-text-white">
-  <div class="w3-main w3-display-container" style="height: 50px; margin-left: 200px;">
+  <div class="w3-main w3-display-container" style="height: 50px;">
     <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
     <div class="w3-display-middle">
       <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
@@ -51,7 +38,7 @@ p.w3-opacity {text-align: justify;}
 </header>
 
 <!-- Sidebar -->
-<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large w3-center" style="z-index: 3;">
+<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large" style="z-index: 3;">
   <a href="javascript:void(0)" onclick="close_sidebar()" class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close Menu</a>
   <div class="w3-container w3-padding-32">
     <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
@@ -71,40 +58,25 @@ p.w3-opacity {text-align: justify;}
 <div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
 
 <!-- Indent main content -->
-<div class="w3-main" style="margin-left: 200px;">
-
-  <!-- First Grid -->
-  <div style="padding-top: 76px; padding-bottom: 32px;">
-    <div id="content" class="w3-content w3-padding-small w3-text-white">
-      <h1 class="w3-xxxlarge" style="margin-bottom: -16px;">Ramon Velazquez</h1>
-      <h5 class="w3-opacity-min"><b>Assistant Research Professor</b>, ASU-Banner Neurodegenerative Disease Research Center</h5>
-      <img src="lab_director/ramon_velazquez.png" alt="Ramon Velazquez" class="w3-border w3-image" style="padding:8px;">
-      <p class="w3-opacity"><a href="lab_director/Ramon Velazquez_CV_Dec 2020.pdf" target="_blank">Click to view Ramon Velazquez’s Curriculum Vitae</a></p>
-      <h2>Biography</h2>
-      <p class="w3-opacity">Dr. Ramon Velazquez is an Assistant Research Professor at the Neurodegenerative Disease Research Center at the Biodesign Institute - Arizona State University (ASU). Dr. Velazquez research interests include identifying novel therapeutic targets for neurodegenerative disorders such as Alzheimer’s disease (AD) and Down Syndrome (DS). In particular, he focuses on early molecular events that are triggered by environmental factors that induce the progression of the disease. Dr. Velazquez is also interested in drug discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression. Dr. Velazquez received his doctoral degree at Cornell University in 2014, where he was funded by the National Science Foundation (NSF) Pre-Doctoral fellowship and completed his postdoctoral training in molecular biology and neuroscience at ASU, where he was independently funded by the Alzheimer’s Association. Additionally, he was funded through an NSF postdoctoral fellowship. Dr. Velazquez’s ultimate goal is to advance science while consecutively helping those who suffer from insidious neurodegenerative diseases.</p>
-      <p class="w3-opacity">Teaching and mentorship are particularly important to Dr. Velazquez in order to reach his ultimate goal of progressing science and having a large impact on the community.  Dr. Velazquez has over 13 years of teaching experience, including serving as a teaching assistant while he was an undergraduate at California State University Long Beach and also developed and taught courses on mental illness and neurodegeneration as a graduate student at Cornell university. Currently, at ASU, Dr. Velazquez serves as a guest lecture for Neurobiology and Memory courses every semester.  Dr. Velazquez philosophy when teaching is not to simply reiterate information from a textbook, but to get students excited about the topics at hand by providing real world examples that students can relate to and radiating excitement during lectures.</p>
-    </div>
+<div class="w3-main">
+  <div id="content" class="w3-content">
+    <h1 class="w3-xxxlarge" style="margin-bottom: -16px;">Ramon Velazquez</h1>
+    <h5 class="w3-opacity-min"><b>Assistant Research Professor</b>, ASU-Banner Neurodegenerative Disease Research Center</h5>
+    <img src="lab_director/ramon_velazquez.png" alt="Ramon Velazquez" class="w3-border w3-image">
+    <p class="w3-opacity"><a href="lab_director/Ramon Velazquez_CV_Dec 2020.pdf" target="_blank">Click to view Ramon Velazquez’s Curriculum Vitae</a></p>
+    <h2>Biography</h2>
+    <p class="w3-opacity">Dr. Ramon Velazquez is an Assistant Research Professor at the Neurodegenerative Disease Research Center at the Biodesign Institute - Arizona State University (ASU). Dr. Velazquez research interests include identifying novel therapeutic targets for neurodegenerative disorders such as Alzheimer’s disease (AD) and Down Syndrome (DS). In particular, he focuses on early molecular events that are triggered by environmental factors that induce the progression of the disease. Dr. Velazquez is also interested in drug discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression. Dr. Velazquez received his doctoral degree at Cornell University in 2014, where he was funded by the National Science Foundation (NSF) Pre-Doctoral fellowship and completed his postdoctoral training in molecular biology and neuroscience at ASU, where he was independently funded by the Alzheimer’s Association. Additionally, he was funded through an NSF postdoctoral fellowship. Dr. Velazquez’s ultimate goal is to advance science while consecutively helping those who suffer from insidious neurodegenerative diseases.</p>
+    <p class="w3-opacity">Teaching and mentorship are particularly important to Dr. Velazquez in order to reach his ultimate goal of progressing science and having a large impact on the community.  Dr. Velazquez has over 13 years of teaching experience, including serving as a teaching assistant while he was an undergraduate at California State University Long Beach and also developed and taught courses on mental illness and neurodegeneration as a graduate student at Cornell university. Currently, at ASU, Dr. Velazquez serves as a guest lecture for Neurobiology and Memory courses every semester.  Dr. Velazquez philosophy when teaching is not to simply reiterate information from a textbook, but to get students excited about the topics at hand by providing real world examples that students can relate to and radiating excitement during lectures.</p>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-center w3-black">
-  <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <footer>
+    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
-
 </div>
 
-<script>
-// Script to open and close sidebar
-function open_sidebar() {
-  document.getElementById("sidebar").style.display = "block";
-  document.getElementById("overlay").style.display = "block";
-}
-  
-function close_sidebar() {
-  document.getElementById("sidebar").style.display = "none";
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
+<!-- Script to open and close sidebar -->
+<script src="sidebar.js"></script>
 
 </body>
 </html>
