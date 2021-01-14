@@ -26,6 +26,17 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 img.w3-border {
   padding: 8px;
 }
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+div.grid > div {
+  padding: 16px;
+}
 </style>
 
 <head>
@@ -82,7 +93,15 @@ img.w3-border {
 
       <h5>The VLoND Uses a Variety of Model Symptoms, which Include:</h5>
       <p class="w3-opacity">Post-mortem brain tissue from patients with Down syndrome and Alzheimer’s disease.</p>
-      <img src="research/normal_vs_alzheimers.png" alt="Normal Brain vs Alzheimer’s Brain" class="w3-border w3-image">
+
+      <div class="grid">
+        <div>
+          <img src="research/normal_vs_alzheimers.png" alt="Normal Brain vs Alzheimer’s Brain" class="w3-border w3-image">
+        </div>
+        <div>
+          <img src="research/rbbp7_expression.png" alt="Rbbp7 mRNA Expression" class="w3-border w3-image">
+        </div>
+      </div>
 
       <p class="w3-opacity">The VLoND is heavily focused on using transgenic mouse models of neurodegenerative disorders. </p>
       <img src="research/mice.png" alt="Mice" class="w3-border w3-image">
@@ -113,7 +132,7 @@ img.w3-border {
       <h5 class="w3-padding-top-32">Genetic Modulation of Novel Therapeutic Targets with Adeno-Associated Viruses (AAV)</h5>
       <p class="w3-opacity">The VLoND has the ability to develop a variety of AAV serotypes to specifically modulate key targets to assess mechanistic links in <i>vivo</i>.</p>
       <img src="research/aav_serotypes.png" alt="AAV Serotypes" class="w3-border w3-image">
-      <div style="display: flex; align-self: center; justify-content: center; margin-top: 16px;">
+      <div class="grid" style="margin-top: 16px;">
         <img src="research/aav-rbbp7.png" alt="AAV Rbbp7 Expression" class="w3-border w3-image">
       </div>
       <p class="w3-opacity"><a href="https://www.vectorbiolabs.com/?gclid=Cj0KCQiA6Or_BRC_ARIsAPzuer-aZUmPxBc3jYEhSR0F-yXqHGHQZc8xKNBmvtbCxnbNc1-b2-Ab588aAnxtEALw_wcB">Click to learn more about the AAVs</a></p>
