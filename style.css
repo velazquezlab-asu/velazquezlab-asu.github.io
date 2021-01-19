@@ -29,6 +29,9 @@ ol.bold span {
   align-items: center;
   flex-wrap: wrap;
 }
+.picture-grid p {
+  text-align: center;
+}
 #content {
   padding: 76px 8px 0px 8px;
   color: white;
