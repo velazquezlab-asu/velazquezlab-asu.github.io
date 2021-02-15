@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+</style>
+
+<head>
+  <!-- Title and Icons -->
+  <title>Student Success | ASU-VLoND</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="w3-dark-grey w3-top w3-text-white">
+  <div class="w3-main w3-display-container" style="height: 50px;">
+    <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
+    <div class="w3-display-middle">
+      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
+    </div>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large w3-center" style="z-index: 3;">
+  <a href="javascript:void(0)" onclick="close_sidebar()" class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close Menu</a>
+  <div class="w3-container w3-padding-32">
+    <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
+  </div>
+  <!-- Tell our JS what page this is -->
+  <div id="page-id">studentsuccess.html</div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
+
+<!-- Indent main content -->
+<div class="w3-main">
+  <div id="content" class="w3-content">
+    <h1><b>Student Success</b></h1>
+
+    <h5>We are very proud of the accomplishments made by students that have been mentored by Dr. Velazquez</h5>
+
+    <h3 class="w3-padding-top-32">Likith Surendra</h3>
+    <div class="w3-row">
+      <img src="student_success/likith_surendra.png" alt="Likith Surendra" class="w3-quarter w3-image w3-border">
+      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez's mentorship, I had the opportunity to contribute meaningfully to innovative projects exploring neurodegenerative disease processes and complete my honors thesis. I developed an appreciation for the scientific research process and gained valuable research, writing, presentation, and critical thinking skills that I will apply to my future research endeavors.
+        <br><br>
+        I am currently (2021) a medical student at the University of Arizona College of Medicine – Phoenix
+      </p>
+    </div>
+
+    <h3 class="w3-padding-top-32">An Tran</h3>
+    <div class="w3-row">
+      <img src="student_success/an_tran.png" alt="An Tran" class="w3-quarter w3-image w3-border">
+      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship and guidance, I gained invaluable knowledge of not only neuroscience and research, but also an abundance of confidence, grit, and conscientiousness. Currently, I am a clinical researcher applying my learned skills and expertise to research related to the COVID-19 vaccine, Alzheimer's disease and dementia. 
+        <br><br>
+        In Fall 2021, I will be attending Georgetown University in pursuit of a Master of Science in Nursing degree, with the ultimate goal of promoting health equity and social justice in healthcare
+        </p>
+    </div>
+
+    <h3 class="w3-padding-top-32">Nikhil Dave</h3>
+    <div class="w3-row">
+      <img src="student_success/nikhil_dave.png" alt="Nikhil Dave" class="w3-quarter w3-image w3-border">
+      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship and guidance, I gained six years (and counting) of research experience and more importantly – a passion for and an understanding of what it means to do good, rigorous science.  Currently, I am preparing to complete a M.S. in Biology in the Velazquez Lab, working in the Luminosity Lab, and serving on the Arizona Board of Regents.
+        <br><br>
+        While my career steps beyond ASU are yet to be discovered, throughout my future career in biotechnology I will seek to revolutionize the process of drug discovery across a myriad of diseases, advance initiatives focused on preventing scientific misconduct, and work to promote the benefits of science and technology in society.
+        </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+</div>
+
+<!-- Script to open and close sidebar -->
+<script src="sidebar.js"></script>
+
+</body>
+</html>
