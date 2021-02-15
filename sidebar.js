@@ -16,6 +16,7 @@ const highlight = "w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text
 const normal = "w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey".split(' ');
 
 let file = document.getElementById('page-id').innerText;
+let sidebar = document.getElementById('sidebar');
 
 for (let i = 0; i < files.length; i++) {
   let current_file = files[i];
@@ -25,7 +26,7 @@ for (let i = 0; i < files.length; i++) {
 
   if (current_file == file) {
     a.href = "#";
-    a.onclick = "close_sidebar()";
+    a.onclick = close_sidebar;
     highlight.forEach(item => a.classList.add(item));
   } else {
     a.href = "./" + current_file;
@@ -34,5 +35,5 @@ for (let i = 0; i < files.length; i++) {
 
   a.innerText = current_name;
 
-  document.getElementById('sidebar').appendChild(a);
+  sidebar.appendChild(a);
 }
