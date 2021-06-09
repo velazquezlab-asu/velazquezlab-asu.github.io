@@ -9,8 +9,8 @@ function close_sidebar() {
 }
 
 // Automatically insert the links to the different pages of the site
-const files = ['index.html', 'labdirector.html', 'labmembers.html', 'research.html', 'publications.html', 'funding.html', 'news.html', 'studentsuccess.html', 'outreach.html', 'contact.html'];
-const names = ['Home', 'Lab Director (PI)', 'Lab Members', 'Research', 'Publications', 'Funding', 'News', 'Student Success', 'Outreach', 'Contact Us'];
+const files = ['index.html', 'labdirector.html', 'labmembers.html', 'research.html', 'projects.html',  'publications.html', 'funding.html', 'studentsuccess.html', 'outreach.html', 'contact.html'];
+const names = ['Home', 'Lab Director (PI)', 'Lab Members', 'Research', 'Current Projects', 'Publications', 'Funding', 'Student Success', 'Outreach', 'Contact Us'];
 
 const highlight = "w3-bar-item w3-button w3-padding w3-hover-text-orange w3-text-orange w3-hover-black w3-black".split(' ');
 const normal = "w3-bar-item w3-button w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey".split(' ');

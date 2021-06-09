@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  /* Large Screen */
+@media screen and (min-width: 993px) {
+  #rbbp7 {
+    max-width: 70%;
+  }
+  #pim1 {
+    max-width: 60%;
+  }
+  #foods {
+    float: left; 
+    margin: 10px 10px 0px 0px;
+  }
+  #neuron {
+    max-width: 23%;
+  }
+  #ds-ad {
+    max-width: 60%;
+  }
+}
+/* Medium Screen */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  #rbbp7 {
+    max-width: 70%;
+  }
+  #pim1 {
+    max-width: 60%;
+  }
+  #foods {
+    float: left; 
+    margin: 10px 10px 0px 0px;
+  }
+  #neuron {
+    max-width: 23%;
+  }
+  #ds-ad {
+    max-width: 60%;
+  }
+}
+/* Small Screen */
+@media screen and (max-width: 600px) {
+  #rbbp7 {
+    width: 100%;
+  }
+  #pim1 {
+    width: 100%;
+  }
+  #brain {
+    max-width: 50%;
+  }
+  #foods {
+    width: 100%; 
+    margin: auto;
+  }
+  #neuron {
+    max-width: 50%;
+  }
+  #ds-ad {
+    width: 100%;
+  }
+}
+</style>
+
+<head>
+  <!-- Title and Icons -->
+  <title>Projects | ASU-VLoND</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="w3-dark-grey w3-top w3-text-white">
+  <div class="w3-main w3-display-container" style="height: 50px;">
+    <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
+    <div class="w3-display-middle">
+      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
+    </div>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large w3-center" style="z-index: 3;">
+  <a href="javascript:void(0)" onclick="close_sidebar()" class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close Menu</a>
+  <div class="w3-container w3-padding-32">
+    <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
+  </div>
+  <!-- Tell our JS what page this is -->
+  <div id="page-id">projects.html</div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
+
+<!-- Indent main content -->
+<div class="w3-main">
+  <div id="content" class="w3-content">
+    <div style="display: inline-block;">
+      <h1><b>Current Projects</b></h1>
+
+      <h5>Determine Whether Widespread Dietary Choline Deficiency Increases Alzheimer’s Disease Risk</h5>
+        
+      <img id="foods" src="index/choline_foods.png" alt="Foods Rich in Choline" class="w3-border w3-image">
+      <p id="choline-text" class="w3-opacity">
+        Choline, a key nutrient found in common foods, is required to produce acetylcholine, a neurotransmitter responsible for memory, muscle control and mood. It also builds cell membranes and plays a vital role in regulating gene expression. Choline is also a primary dietary source of methyl groups converting homocysteine (Hcy), a toxic amino acid, to methionine. Notably, elevated levels of Hcy increases the risk of developing AD and has been mechanistically linked to the production of Aβ plaques. While humans and rodents can produce endogenous choline, these levels fail to meet bodily demands, requiring dietary consumption. In 1998, the U.S. established an adequate intake (AI) of dietary choline per day for adult women (425mg/day) and  men (550mg/day) to deter from fatty liver disease. However, a converging line of evidence in both rodent models and humans indicates that the current AI may not be optimal for proper brain health and cognition, given choline’s role in the brain. Decades of research, including many of our publications, have shown that supplementing the maternal diet (during gestation and lactation) with 4.5x the AI of choline produces profound benefits on the offspring’s brain health and cognition. In particular, these studies have demonstrated amelioration of cognitive deficits in mouse models of Down syndrome and AD. Most recently, it has been shown that a lifelong regimen of choline supplementation from early to late adulthood reduces brain inflammation, Aβ plaque burden, and associated cognitive deficits in male and female AD mice.   While a vast majority of choline research has focused on its supplementation effects to reduce cognitive deficits and AD pathology, epidemiology studies show that a shocking 90% of Americans fail to reach the daily AI. This results in a twofold problem; 1) most Americans are choline deficient and 2) the current choline AI per day is not optimal for brain health. Thus, it is imperative to determine whether a diet deficient in choline throughout life increases the risk of AD. Establishing whether dietary choline deficiency increases AD pathology will provide much needed information on the need of choline in the daily diet for the general population to reduce AD risk.
+      </p>
+    </div>
+
+    <div style="display: inline-block;">
+      <h5 class="w3-padding-top-32">Glyphosate Exposure a Risk Factor for Cognitive Aging and Alzheimer’s Disease</h5>
+
+      <img id="brain" src="index/brain_tree.png" align="left" alt="Human Brain Shaped Tree" class="w3-border w3-image" style="margin: 10px 10px 5px 0px;">
+      <p class="w3-opacity">Glyphosate is a toxic herbicide that has been the most heavily used since its inception in the 1970s. Glyphosate-based herbicides often contaminate drinking water, precipitation, and air in agricultural communities and products.  While the effects of glyphosate toxicity have been extensively studied in relation to the peripheral body, they have not in the brain. This fact is particularly concerning since glyphosate can cross the blood-brain barrier (BBB) in humans. Notably, correlations exist between AD and dementia death rates and glyphosate exposure. However, it has yet to be determined whether there is a causal relationship between glyphosate exposure and AD. Given that environmental factors are at play for late-onset sporadic AD, which accounts for >95% of those affected, understanding whether glyphosate exposure plays a role in inducing cognitive deficits could determine if glyphosate is, in fact, a risk factor for this insidious disease. The overall goal of this project is to identify the detectable level of glyphosate that induces cognitive deficits in humans and to determine whether such exposure increases AD risk and neuropathology.</p>
+    </div>
+
+    <div style="display: inline-block;">
+      <h5 class="w3-padding-top-32">Identification of the Retinoblastoma Binding Protein 7 (Rbbp7) as a Mediator of Tau Pathology in Alzheimer’s Disease</h5>
+
+      <img id="rbbp7" src="index/rbbp7.png" align="left" class="w3-border w3-image" style="margin: 10px 10px 0px 0px;">
+      <p class="w3-opacity">Evidence indicates that tau hyperphosphorylation and subsequent neurofibrillary tangles contribute to the extensive neuronal death in Alzheimer’s Disease (AD) and related tauopathies. However, the complete mechanisms underlying this pathogenesis remains elusive. Work has highlighted the role of the epigenome in tau pathogenesis, suggesting that dysregulation of epigenetic proteins may contribute to acetylation and hyperphosphorylation of cytoplasmic tau. Several epigenetic complexes have been implicated in epigenomic dysfunction related to tauopathies. We have identified the histone-binding subunit of the Nucleosome Remodeling and Deacetylase complex: Retinoblastoma Binding Protein 7 (Rbbp7).  Rbbp7 chaperones several chromatin remodeling proteins to their nuclear histone substrates, including histone acetylases and deacetylases. Notably, Rbbp7 binds to chromatin remodeling factors which have been implicated to increase the secretion of tau, including p300/CBP. We have interrogated Rbbp7 in post-mortem brain tissue, cell lines and mouse models of AD and have found reduced mRNA Rbbp7 expression in AD cases and a significant negative correlation with Braak Staging, a measure of pathogenic tau inclusions. Rbbp7 protein levels are significantly decreased in 3xTg-AD and PS19 compared to NonTg mice, but no decreases are seen in APP/PS1 mice that lack tau mutations. Hippocampal overexpression of Rbbp7 rescues neuronal death and reduced pathological tau markers in PS19 mice. Collectively, we identify a novel role of Rbbp7 in protecting against tau-related pathologies and highlight its potential as a therapeutic target in AD and related tauopathies.</p>
+    </div>
+
+    <div style="display: inline-block;">
+      <h5 class="w3-padding-top-32">Deciphering the Early Molecular Events in Down Syndrome that Contribute to Alzheimer's Disease Progression</h5>
+
+      <img id="ds-ad" src="index/ds_ad_link.png" align="right" class="w3-border w3-image" style="margin: 10px 0px 0px 10px;">
+      <p class="w3-opacity">Growing evidence indicates that Alzheimer's disease (AD) starts decades before its clinical manifestation and that early clinical interventions are needed to effectively mitigate the progression of AD. However, the initial triggers in the cascade of pathological events leading to AD remain elusive. Virtually 100% of people with Down syndrome (DS) will show brain accumulation of amyloid-β (Aβ) and tau in their fifth decade of life. Despite these data, little is known about the processes linking DS to AD. We postulate that dissecting the molecular mechanisms driving AD pathology in DS patients will lead to a better understanding of the etiology of AD. Previous work indicates that the mammalian target of rapamycin (mTOR) is hyperactive in human and animal models of DS and AD. Further, we and others have shown that hyperactive mTOR signaling facilitates the accumulation of Aβ and tau. Together, these novel and exciting findings may answer a fundamental unresolved question: which event triggers the development of AD neuropathology in DS. The answer to this question will unveil mechanistic changes linked to the etiology of AD. The overall hypothesis of this project is that dysfunctional tuberous sclerosis complex 2 (TSC2), which is a regulator of mTOR, increases it’s activity in DS, which in turn contributes to the development of AD-like neurodegeneration. The results from this work will lead to a better understanding of the mechanism leading to neurodegeneration in DS and AD and will identify new therapeutic targets for these two disorders.</p>  
+    </div>
+
+    <div style="display: inline-block;">
+      <h5 class="w3-padding-top-32">The Pim1 Kinase as a Contributor to the Pathological Progression of Alzheimer's Disease</h5>
+
+      <img id="pim1" src="index/pim1_expression.png" alt="Pim1 Expression Graphs" align="left" class="w3-border w3-image" style="margin: 10px 10px 5px 0px;">
+      <p class="w3-opacity">Pim1, a protein kinase from the proto-oncogene family, emerged in research as it is elevated in various cancers. Within the brain, Pim1 is expressed exclusively in the cortex and hippocampus, two brain regions that are highly vulnerable to AD pathology. We identified Pim1 as being dysregulated in post-mortem brain tissue of patients with in early and late stages of AD compared to age-matched controls. Physiologically, Pim1 phosphorylates and regulates the activity of the proline-rich AKT substrate 40 kDa (PRAS40), which is involved in modulating protein degradation. Pim1 also plays key functions in long-term potentiation and synaptic plasticity, and increased Pim1 activity is linked to seizures and neuronal death. Pim1 is regulated by JAK/STAT, a pathway activated by inflammation. Our recent data illustrates that Pim1 is elevated in CA1 hippocampal neurons of AD patients and our published work shows that pharmacological inhibition of Pim1 rescues AD pathology in 3xTg-AD mice. Notably, 3xTg-AD mice develop amyloid-β plaques and pathological tau, which are the two hallmark pathologies in AD. The current goals of this project are to determine how modulating neuronal Pim1 activity interferes with AD pathology and to dissect the upstream mechanisms linked to Pim1 upregulation. We hypothesize that activation of the JAK/STAT pathway by inflammatory cytokines increases Pim1 activity, which in turn facilitates the development of AD pathology.</p>
+    </div>
+    
+    <h1 class="w3-padding-top-32"><b>Techniques Performed in Our Laboratory</b></h1>
+    <ul class="w3-opacity">
+      <li>Development and usage of genetic mouse models of Down syndrome and Alzheimer's Disease (e.g. Ts65Dn, APP/PS1, PS19, APP Knock-in).</li>
+      <li>Immunohistochemistry</li>
+      <li>Western blot assay</li>
+      <li>Confocal Microscopy</li>
+      <li>MBF unbiased stereology and Neurolucida dendritic spine quantification</li>
+      <li>Genotyping and qPCR</li>
+      <li>Behavioral assessment in mice (Rota Rod, Morris water maze, Radial arm water maze)</li>
+      <li>Automated behavioral assessment in mice using the TSE IntelliCage system</li>
+    </ul>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+</div>
+
+<!-- Script to open and close sidebar -->
+<script src="sidebar.js"></script>
+
+</body>
+</html>
