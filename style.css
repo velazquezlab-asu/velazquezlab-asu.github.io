@@ -9,6 +9,7 @@ p.w3-opacity {text-align: justify;}
 .w3-sidebar {width: 200px;}
 .w3-main {margin-left: 200px;}
 img.w3-border {padding: 8px;}
+iframe.w3-border {padding: 8px;}
 ol.spaced li:not(:last-child) {
   margin-bottom: 10px;
 }
