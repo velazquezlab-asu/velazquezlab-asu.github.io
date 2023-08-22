@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -12,41 +11,45 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-/* Large Screen */
-@media screen and (min-width: 993px) {
-  #neuron {
-    max-width: 23%;
-  }
-  .news-text {
-    margin-top: -20px;
-    padding-left: 16px;
-  }
-}
-/* Medium Screen */
-@media screen and (min-width: 601px) and (max-width: 992px) {
-  #neuron {
-    max-width: 23%;
-  }
-  .news-text {
-    margin-top: -20px;
-    padding-left: 16px;
-  }
-}
-/* Small Screen */
-@media screen and (max-width: 600px) {
-  #neuron {
-    max-width: 50%;
-  }
-  .news-text {
-    margin-top: 0px;
-    padding-left: 0px;
-  }
-}
+  /* Large Screen */
+  @media screen and (min-width: 993px) {
+    #neuron {
+      max-width: 23%;
+    }
 
-.news > div:not(:first-of-type) {
-  padding-top: 32px;
-}
+    .news-text {
+      margin-top: -20px;
+      padding-left: 16px;
+    }
+  }
 
+  /* Medium Screen */
+  @media screen and (min-width: 601px) and (max-width: 992px) {
+    #neuron {
+      max-width: 23%;
+    }
+
+    .news-text {
+      margin-top: -20px;
+      padding-left: 16px;
+    }
+  }
+
+  /* Small Screen */
+  @media screen and (max-width: 600px) {
+    #neuron {
+      max-width: 50%;
+    }
+
+    .news-text {
+      margin-top: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  .news>div:not(:first-of-type) {
+    padding-top: 32px;
+  }
 </style>
 
 <head>
@@ -59,163 +62,299 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta name="Description" content="The Velazquez Laboratory of Neurodegenerative Diseases aims to progress science while consecutively helping those who suffer from Neurodegenerative diseases. Learn about our current projects, lab members, publications, funding and laboratory techniques.">
+  <meta name="Description"
+    content="The Velazquez Laboratory of Neurodegenerative Diseases aims to progress science while consecutively helping those who suffer from Neurodegenerative diseases. Learn about our current projects, lab members, publications, funding and laboratory techniques.">
 </head>
 
 <body>
 
-<!-- Header -->
-<header class="w3-dark-grey w3-top w3-text-white">
-  <div class="w3-main w3-display-container" style="height: 50px;">
-    <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
-    <div class="w3-display-middle">
-      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
+  <!-- Header -->
+  <header class="w3-dark-grey w3-top w3-text-white">
+    <div class="w3-main w3-display-container" style="height: 50px;">
+      <a href="javascript:void(0)"
+        class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey"
+        onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
+      <div class="w3-display-middle">
+        <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative
+            Diseases - VLoND</b></h3>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- Sidebar -->
-<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large" style="z-index: 3;">
-  <a href="javascript:void(0)" onclick="close_sidebar()" class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close Menu</a>
-  <div class="w3-container w3-padding-32">
-    <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
-  </div>
-  <!-- Tell our JS what page this is -->
-  <div id="page-id">index.html</div>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
-
-<!-- Indent main content -->
-<div class="w3-main">
-  <div id="content" class="w3-content">
-	<h3><u>The Velazquez Lab is seeking applications for the competitive Edson postdoctoral fellow</u></h3>
-	<p class="w3-opacity">
-		We invite applications for an Edson Foundation Postdoctoral Research Scholar in the ASU Neurodegenerative Disease Research Center (NDRC) at Arizona State University’s. The NDRC is a center in the world renown Biodesign Institute and the fellowship would be in the laboratory of Dr. Ramon Velazquez. Under the direction of founding director Dr. Jeffrey Kordower, the goal of the Edson Foundation and NDRC is to fund research and scholars that will aid in new discoveries and solutions to better the quality of life for people affected by neurodegenerative diseases such as Alzheimer’s and Parkinson’s disease.<br><br>
-		The selected candidate will work in the Velazquez laboratory, which is focused on identifying early molecular events that are triggered by environmental factors that accelerate disease. This lab is also interested in drug discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression. Additionally, the lab has a strong focus on understanding why individuals with Down Syndrome (a genetic disorder resulting in intellectual disabilities) show an increase prevalence of Alzheimer's disease. The Velazquez lab uses a variety of model systems, including invitro cell models of disease, transgenic rodent models, and both nonhuman primate and human tissue from patients.<br><br>
-		We will begin reviewing applications May 15th, 2023 and will continue to review incoming applications on a biweekly basis until the position is filled.<br><br>
-		<a href="https://www.nature.com/naturecareers/job/12798229/postdoctoral-research-scholar/"><b>Click to visit the application page</b></a>
-	</p>
-  
-    <h1><b>Velazquez Lab of Neurodegenerative Diseases</b></h1>
-
-    <img src="index/neuron.png" id="neuron" alt="Neuron" class="w3-border w3-image" style="margin: 10px 0px 5px 10px; float:right">
-    <p class="w3-opacity">Given that the elderly is the fastest growing population in our society and that age is the single most important risk factor for Alzheimer’s disease (AD), there is an urgent need to understand the mechanisms contributing to AD pathology. Doing so, we will be able to develop strategies by which we can prevent the incidence of AD, as well as help those that are currently in advanced stages of this disease. One of the most fruitful approaches for studying neurodegenerative diseases stems from utilizing a multidisciplinary strategy. Dr. Velazquez graduate and early postdoctoral studies have shaped him into a well-rounded neuroscientist with this type of multidisciplinary approach, as he received extensive training in behavioral neuroscience, animal models of disease, neurobiology and molecular neuroscience. This allows the VLoND team to ask questions at multiple levels of analysis. The VLoND ultimate goal is to progress science while consecutively helping those who suffer from Neurodegenerative diseases.</p>
-
-    <div class="news" style="display: inline-block;">
-      <h1><b>Recent News</b></h1>
-	  
-	  <div class="w3-row">
-        <img src="index/valazquez_choline_jan2023-01.jpg" alt="Proper choline intake vs insufficient choline intake" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>Study Explores Effects of Dietary Choline Deficiency on Neurologic, System-Wide Health</h3>
-          <h5><i>January 17, 2023</i></h5>
-          <p class="w3-opacity">Choline, an essential nutrient produced in small amounts in the liver and found in foods including eggs, broccoli, beans, meat and poultry, is a vital ingredient for human health. A new study explores how deficiency in dietary choline adversely affects the body and may be a missing piece in the puzzle of Alzheimer’s disease.<br><br><a href="https://news.asu.edu/20230117-study-explores-effects-dietary-choline-deficiency-neurologic-systemwide-health"><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-	  
-	  <div class="w3-row">
-        <img src="index/PRX_Productions_Color_Stacked.png" alt="PRX Productions" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>An Interview with Dr. Ramon Velazquez on Glyphosate Exposure and the Importance of Daily Dietary Choline Supplementation</h3>
-          <h5><i>September 29, 2022</i></h5>
-          <p class="w3-opacity">Did you know that the herbicide glyphosate can cross the blood-brain barrier, resulting in an increase of neuro-inflammation? Join Food Sleuth Radio host and Registered Dietitian, Melinda Hemmelgarn, for her interview with Ramon Velazquez, Ph.D., Assistant Professor in the School of Life Sciences, and Neurodegenerative Disease Research Center at the Biodesign Institute, Arizona State University.<br><br><a href="https://beta.prx.org/stories/440765"><b>Click to listen to the interview and read more</b></a></p>
-        </div>
-      </div>
-	  
-	  <div class="w3-row">
-        <img src="index/SSICPartner_AZ_AZPBS_800x600.jpg" alt="Arizona PBS" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>Pesticide research links chemical compound to brain disorders</h3>
-          <h5><i>September 6, 2022</i></h5>
-          <p class="w3-opacity">Researchers have discovered a chemical compound called glyphosate, found in common herbicides, that infiltrates the layers of cells that protect the brain. The research shows that this chemical can elevate levels of molecules associated with disorders such as Alzheimer’s disease in humans.<br><br>Ramon Velasquez of Biodesign Neurodegenerative Disease Research Center and Patrick Pirrotte from Translational Genomics Research Institute (TGen) discuss their findings.<br><br><a href="https://azpbs.org/horizon/2022/09/pesticide-compound-linked-to-brain-disorders/"><b>Click to watch the video and read the full article</b></a></p>
-        </div>
-      </div>
-	  
-	  <div class="w3-row">
-        <img src="index/ad-factsheet-meta2-1-1024x585.png" alt="Glyphosate may be linked to neurodegenerative diseases" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>New study says glyphosate may be linked to neurodegenerative diseases</h3>
-          <h5><i>August 19, 2022</i></h5>
-          <p class="w3-opacity">Glyphosate, the world’s most widely used weed killer, can reach the brain and cause inflammation associated with neurodegenerative diseases such as Alzheimer’s and Parkinson’s disease, according to new research. These findings add to growing concerns that glyphosate and other pesticides are leaving a damaging impact on human health and the environment.<br><br>The results mark the first time scientists have identified glyphosate present in brain tissue, said Ramon Velazquez, an assistant professor studying neurodegenerative diseases at Arizona State University and a senior author of the study<a href="https://www.thenewlede.org/2022/08/new-study-says-glyphosate-may-be-linked-to-neurodegenerative-diseases/"><br><br><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-	  
-	  <div class="w3-row">
-        <img src="index/glyphosate.png" alt="Glyphosate ends up in common food and crosses the blood-brain barrier" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>New study shows that a commonly used agricultural herbicide crosses into the brain and may increase risk of neurodegenerative disorders</h3>
-          <h5><i>July 27, 2022</i></h5>
-          <p class="w3-opacity">Neurodegenerative illnesses, such as Alzheimer’s disease, are among the most perplexing in medical science. The underlying causes of such diseases range from genetic factors and overall cardiovascular health to dietary influences and lifestyle choices.<br><br>Various environmental contaminants have also been implicated as possible players in the development or advancement of neurodegenerative disease. Among these is a broad-spectrum herbicide, known as glyphosate. Glyphosate is commonly used herbicide, applied to agricultural crops around the world.<br><br>In a new study, first author Joanna Winstone, senior author Ramon Velazquez, and their colleagues at the Translational Genomics Research Institute (TGen) explore the effects of glyphosate exposure on the brains of mice. The research demonstrates, for the first time, that glyphosate successfully crosses the blood-brain barrier and infiltrates the brain. Once there, it acts to enhance levels of a critical factor known as TNF-α, (for tumor necrosis factor alpha).<a href="https://biodesign.asu.edu/neurodegenerative-disease/news-and-events/story/new-study-shows-that-a-commonly-used-agricultural-herbicide-crosses-the-blood-brain-barrier/"><br><br><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-
-      <div class="w3-row">
-        <img src="index/alzheimers_dave_valazquez_biodesign_HEADER.jpg" alt="Neurons" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>Untangling the brain: New research offers hope for fighting Alzheimer’s disease</h3>
-          <h5><i>May 12, 2021</i></h5>
-          <p class="w3-opacity">Since the discovery of Alzheimer’s disease over a century ago, two hallmarks of the devastating illness have taken center stage. The first, known as amyloid plaques, are dense accumulations of misfolded amyloid protein, occurring in the spaces between nerve cells. Most efforts to halt the advance of Alzheimer’s disease have targeted amyloid protein plaques. To date, all have met dispiriting failure.<a href="https://biodesign.asu.edu/news/untangling-brain-new-research-offers-hope-alzheimer%E2%80%99s-disease"><br><br><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-
-      <div class="w3-row">
-        <img src="index/alzheimers_dave_valazquez_biodesign_HEADER.jpg" alt="Neurons" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>Edson seed grants advance innovative dementia solutions</h3>
-          <h5><i>September 24, 2020</i></h5>
-          <p class="w3-opacity">More than $300,000 from the Charlene and J. Orin Edson Initiative for Dementia Care and Solutions was awarded to three Arizona State University research teams for innovative research projects. The funding comes from a portion of Charlene and J. Orin Edson’s $50 million gift to ASU for dementia research and education initiatives.<a href="https://news.asu.edu/20200924-edson-seed-grants-advance-innovative-dementia-solutions"><br><br><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-      
-      <div class="w3-row">
-        <img src="index/SSICPartner_AZ_AZPBS_800x600.jpg" alt="Arizona PBS" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>ASU researchers looking at common supplement to battle Alzheimer’s</h3>
-          <h5><i>October 8, 2019</i></h5>
-          <p class="w3-opacity">Arizona State University researchers are looking at the nutrient choline as a way to prevent Alzheimer’s disease. Research with mice shows that choline helps reduce the activation of microglia, specialized cells that rid the brain of debris. When over activated, microglia can lead to neuronal death and brain inflammation. Choline also blocks production of amyloid-beta plaques, caused by the protein fragment beta-amyloid, which can lead to nerve cell death. Ramon Velazquez, a lead author of the new study and a researcher in the ASU-Banner Neurodegenerative Disease Research Center, tells us more.<a href="https://azpbs.org/horizon/2019/10/asu-researchers-looking-at-common-supplement-to-battle-alzheimers/?fbclid=IwAR0euN5l_CgP4r7pn_l2XDGY6RCinwliK_5XHh5e6Ff2nRfLBtFTEy7G2NY"><br><br><b>Click to watch the video</b></a></p>
-        </div>
-      </div>
-
-      <div class="w3-row">
-        <img src="index/science-daily-3.jpg" alt="Science Daily" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>Common nutrient supplementation may hold the answers to combating Alzheimer's disease</h3>
-          <h5><i>September 27, 2019</i></h5>
-          <p class="w3-opacity">In a new study, Biodesign researchers reveal that a lifelong dietary regimen of choline holds the potential to prevent Alzheimer's disease (AD). Choline is a safe and easy-to-administer nutrient that is naturally present in some foods and can be used as a dietary supplement. Lead author Ramon Velazquez and his colleagues at the ASU-Banner Neurodegenerative Disease Research Center (NDRC) looked into whether this nutrient could alleviate the effects of Alzheimer's.<a href="https://www.sciencedaily.com/releases/2019/09/190927122526.htm"><br><br><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-
-      <div class="w3-row">
-        <img src="index/choline_salvo-ramon_dec2018.jpg" alt="Choline and transgenerational benefits" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>Essential nutrient may help fight Alzheimer's across generations</h3>
-          <h5><i>January 8, 2019</i></h5>
-          <p class="w3-opacity">Researchers are exploring a safe and simple treatment for one of the most devastating and perplexing afflictions: Alzheimer's disease (AD). They are investigatign the effects of choline, an important nutrient that may hold promise in the war against the memory-stealing disorder. The study focuses on mice bred to display Alzheimer’s-like symptoms. Results demonstrate that when these mice are given high choline in their diet, their offspring show improvements in spatial memory, compared with those receiving a normal choline regimen in the womb.<a href="https://www.sciencedaily.com/releases/2019/01/190108084424.htm"><br><br><b>Click to read the full article on Science Daily</b></a><br><a href="https://news.asu.edu/20190108-essential-nutrient-may-help-fight-alzheimers-across-generations"><b>Click to read the full article on ASU News</b></a></p>
-        </div>
-      </div>
-
-      <div class="w3-row">
-        <img src="index/StruppVelazquez9-11.jpg" alt="" class="w3-third w3-border w3-image">
-        <div class="w3-twothird news-text">
-          <h3>More choline for mom decreases Down syndrome effects</h3>
-          <h5><i>September 11, 2013</i></h5>
-          <p class="w3-opacity">Down syndrome fetuses dramatically benefit when their mothers increase their intake of the nutrient choline during pregnancy and nursing, report Cornell researchers in the journal Neurobiology of Disease. Increased choline by moms bolsters brain functions and plays a profound health role for Down syndrome offspring throughout their lives. Increased maternal choline intake improves spatial cognition and attention, and delays aging-related memory decline in normal laboratory rats.  The present findings with Down syndrome mice indicate that increased maternal choline consumption may also lessen the impairment of individuals with Down syndrome and reduce the risk of Alzheimer’s disease, which is seen in nearly all Down syndrome individuals.<a href="https://news.cornell.edu/stories/2013/09/more-choline-mom-decreases-down-syndrome-effects"><br><br><b>Click to read the full article</b></a></p>
-        </div>
-      </div>
-
+  <!-- Sidebar -->
+  <nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large" style="z-index: 3;">
+    <a href="javascript:void(0)" onclick="close_sidebar()"
+      class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close
+      Menu</a>
+    <div class="w3-container w3-padding-32">
+      <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
     </div>
+    <!-- Tell our JS what page this is -->
+    <div id="page-id">index.html</div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu"
+    id="overlay"></div>
+
+  <!-- Indent main content -->
+  <div class="w3-main">
+    <div id="content" class="w3-content">
+      <h3><u>The Velazquez Lab is seeking applications for the competitive Edson postdoctoral fellow</u></h3>
+      <p class="w3-opacity">
+        We invite applications for an Edson Foundation Postdoctoral Research Scholar in the ASU Neurodegenerative
+        Disease Research Center (NDRC) at Arizona State University’s. The NDRC is a center in the world renown Biodesign
+        Institute and the fellowship would be in the laboratory of Dr. Ramon Velazquez. Under the direction of founding
+        director Dr. Jeffrey Kordower, the goal of the Edson Foundation and NDRC is to fund research and scholars that
+        will aid in new discoveries and solutions to better the quality of life for people affected by neurodegenerative
+        diseases such as Alzheimer’s and Parkinson’s disease.<br><br>
+        The selected candidate will work in the Velazquez laboratory, which is focused on identifying early molecular
+        events that are triggered by environmental factors that accelerate disease. This lab is also interested in drug
+        discovery and dietary supplementation of B-like vitamins as a method to prevent disease progression.
+        Additionally, the lab has a strong focus on understanding why individuals with Down Syndrome (a genetic disorder
+        resulting in intellectual disabilities) show an increase prevalence of Alzheimer's disease. The Velazquez lab
+        uses a variety of model systems, including invitro cell models of disease, transgenic rodent models, and both
+        nonhuman primate and human tissue from patients.<br><br>
+        We will begin reviewing applications May 15th, 2023 and will continue to review incoming applications on a
+        biweekly basis until the position is filled.<br><br>
+        <a href="https://www.nature.com/naturecareers/job/12798229/postdoctoral-research-scholar/"><b>Click to visit the
+            application page</b></a>
+      </p>
+
+      <h1><b>Velazquez Lab of Neurodegenerative Diseases</b></h1>
+
+      <img src="index/neuron.png" id="neuron" alt="Neuron" class="w3-border w3-image"
+        style="margin: 10px 0px 5px 10px; float:right">
+      <p class="w3-opacity">Given that the elderly is the fastest growing population in our society and that age is the
+        single most important risk factor for Alzheimer’s disease (AD), there is an urgent need to understand the
+        mechanisms contributing to AD pathology. Doing so, we will be able to develop strategies by which we can prevent
+        the incidence of AD, as well as help those that are currently in advanced stages of this disease. One of the
+        most fruitful approaches for studying neurodegenerative diseases stems from utilizing a multidisciplinary
+        strategy. Dr. Velazquez graduate and early postdoctoral studies have shaped him into a well-rounded
+        neuroscientist with this type of multidisciplinary approach, as he received extensive training in behavioral
+        neuroscience, animal models of disease, neurobiology and molecular neuroscience. This allows the VLoND team to
+        ask questions at multiple levels of analysis. The VLoND ultimate goal is to progress science while consecutively
+        helping those who suffer from Neurodegenerative diseases.</p>
+
+      <div class="news" style="display: inline-block;">
+        <h1><b>Recent News</b></h1>
+
+        <div class="w3-row">
+          <img src="index/plaques_and_tangles.png" alt="Illustration of plaques and tangles in the body"
+            class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>New research links low choline levels in blood to Alzheimer's disease progression</h3>
+            <h5><i>August 7, 2023</i></h5>
+            <p class="w3-opacity">In a new study, senior author <a href="https://search.asu.edu/profile/1187887">Ramon
+                Velazquez</a>, first author and ASU Edson Postdoctoral
+              Fellow <a href="https://search.asu.edu/profile/2336023">Jessica Juddand</a>, and their colleagues at the ASU
+              School of Molecular Sciences and the Banner Brain and
+              Body Donation Center present evidence that low levels of choline in the bloodstream are associated with
+              increased severity of Alzheimer's disease pathology in the brain.<br><br><a
+                href="https://news.asu.edu/20230807-new-research-links-low-choline-levels-blood-alzheimers-disease-progression"><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/valazquez_choline_jan2023-01.jpg" alt="Proper choline intake vs insufficient choline intake"
+            class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>Study Explores Effects of Dietary Choline Deficiency on Neurologic, System-Wide Health</h3>
+            <h5><i>January 17, 2023</i></h5>
+            <p class="w3-opacity">Choline, an essential nutrient produced in small amounts in the liver and found in
+              foods including eggs, broccoli, beans, meat and poultry, is a vital ingredient for human health. A new
+              study explores how deficiency in dietary choline adversely affects the body and may be a missing piece in
+              the puzzle of Alzheimer’s disease.<br><br><a
+                href="https://news.asu.edu/20230117-study-explores-effects-dietary-choline-deficiency-neurologic-systemwide-health"><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/PRX_Productions_Color_Stacked.png" alt="PRX Productions" class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>An Interview with Dr. Ramon Velazquez on Glyphosate Exposure and the Importance of Daily Dietary Choline
+              Supplementation</h3>
+            <h5><i>September 29, 2022</i></h5>
+            <p class="w3-opacity">Did you know that the herbicide glyphosate can cross the blood-brain barrier,
+              resulting in an increase of neuro-inflammation? Join Food Sleuth Radio host and Registered Dietitian,
+              Melinda Hemmelgarn, for her interview with Ramon Velazquez, Ph.D., Assistant Professor in the School of
+              Life Sciences, and Neurodegenerative Disease Research Center at the Biodesign Institute, Arizona State
+              University.<br><br><a href="https://beta.prx.org/stories/440765"><b>Click to listen to the interview and
+                  read more</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/SSICPartner_AZ_AZPBS_800x600.jpg" alt="Arizona PBS" class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>Pesticide research links chemical compound to brain disorders</h3>
+            <h5><i>September 6, 2022</i></h5>
+            <p class="w3-opacity">Researchers have discovered a chemical compound called glyphosate, found in common
+              herbicides, that infiltrates the layers of cells that protect the brain. The research shows that this
+              chemical can elevate levels of molecules associated with disorders such as Alzheimer’s disease in
+              humans.<br><br>Ramon Velasquez of Biodesign Neurodegenerative Disease Research Center and Patrick Pirrotte
+              from Translational Genomics Research Institute (TGen) discuss their findings.<br><br><a
+                href="https://azpbs.org/horizon/2022/09/pesticide-compound-linked-to-brain-disorders/"><b>Click to watch
+                  the video and read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/ad-factsheet-meta2-1-1024x585.png"
+            alt="Glyphosate may be linked to neurodegenerative diseases" class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>New study says glyphosate may be linked to neurodegenerative diseases</h3>
+            <h5><i>August 19, 2022</i></h5>
+            <p class="w3-opacity">Glyphosate, the world’s most widely used weed killer, can reach the brain and cause
+              inflammation associated with neurodegenerative diseases such as Alzheimer’s and Parkinson’s disease,
+              according to new research. These findings add to growing concerns that glyphosate and other pesticides are
+              leaving a damaging impact on human health and the environment.<br><br>The results mark the first time
+              scientists have identified glyphosate present in brain tissue, said Ramon Velazquez, an assistant
+              professor studying neurodegenerative diseases at Arizona State University and a senior author of the
+              study<a
+                href="https://www.thenewlede.org/2022/08/new-study-says-glyphosate-may-be-linked-to-neurodegenerative-diseases/"><br><br><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/glyphosate.png" alt="Glyphosate ends up in common food and crosses the blood-brain barrier"
+            class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>New study shows that a commonly used agricultural herbicide crosses into the brain and may increase risk
+              of neurodegenerative disorders</h3>
+            <h5><i>July 27, 2022</i></h5>
+            <p class="w3-opacity">Neurodegenerative illnesses, such as Alzheimer’s disease, are among the most
+              perplexing in medical science. The underlying causes of such diseases range from genetic factors and
+              overall cardiovascular health to dietary influences and lifestyle choices.<br><br>Various environmental
+              contaminants have also been implicated as possible players in the development or advancement of
+              neurodegenerative disease. Among these is a broad-spectrum herbicide, known as glyphosate. Glyphosate is
+              commonly used herbicide, applied to agricultural crops around the world.<br><br>In a new study, first
+              author Joanna Winstone, senior author Ramon Velazquez, and their colleagues at the Translational Genomics
+              Research Institute (TGen) explore the effects of glyphosate exposure on the brains of mice. The research
+              demonstrates, for the first time, that glyphosate successfully crosses the blood-brain barrier and
+              infiltrates the brain. Once there, it acts to enhance levels of a critical factor known as TNF-α, (for
+              tumor necrosis factor alpha).<a
+                href="https://biodesign.asu.edu/neurodegenerative-disease/news-and-events/story/new-study-shows-that-a-commonly-used-agricultural-herbicide-crosses-the-blood-brain-barrier/"><br><br><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/alzheimers_dave_valazquez_biodesign_HEADER.jpg" alt="Neurons"
+            class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>Untangling the brain: New research offers hope for fighting Alzheimer’s disease</h3>
+            <h5><i>May 12, 2021</i></h5>
+            <p class="w3-opacity">Since the discovery of Alzheimer’s disease over a century ago, two hallmarks of the
+              devastating illness have taken center stage. The first, known as amyloid plaques, are dense accumulations
+              of misfolded amyloid protein, occurring in the spaces between nerve cells. Most efforts to halt the
+              advance of Alzheimer’s disease have targeted amyloid protein plaques. To date, all have met dispiriting
+              failure.<a
+                href="https://biodesign.asu.edu/news/untangling-brain-new-research-offers-hope-alzheimer%E2%80%99s-disease"><br><br><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/alzheimers_dave_valazquez_biodesign_HEADER.jpg" alt="Neurons"
+            class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>Edson seed grants advance innovative dementia solutions</h3>
+            <h5><i>September 24, 2020</i></h5>
+            <p class="w3-opacity">More than $300,000 from the Charlene and J. Orin Edson Initiative for Dementia Care
+              and Solutions was awarded to three Arizona State University research teams for innovative research
+              projects. The funding comes from a portion of Charlene and J. Orin Edson’s $50 million gift to ASU for
+              dementia research and education initiatives.<a
+                href="https://news.asu.edu/20200924-edson-seed-grants-advance-innovative-dementia-solutions"><br><br><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/SSICPartner_AZ_AZPBS_800x600.jpg" alt="Arizona PBS" class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>ASU researchers looking at common supplement to battle Alzheimer’s</h3>
+            <h5><i>October 8, 2019</i></h5>
+            <p class="w3-opacity">Arizona State University researchers are looking at the nutrient choline as a way to
+              prevent Alzheimer’s disease. Research with mice shows that choline helps reduce the activation of
+              microglia, specialized cells that rid the brain of debris. When over activated, microglia can lead to
+              neuronal death and brain inflammation. Choline also blocks production of amyloid-beta plaques, caused by
+              the protein fragment beta-amyloid, which can lead to nerve cell death. Ramon Velazquez, a lead author of
+              the new study and a researcher in the ASU-Banner Neurodegenerative Disease Research Center, tells us
+              more.<a
+                href="https://azpbs.org/horizon/2019/10/asu-researchers-looking-at-common-supplement-to-battle-alzheimers/?fbclid=IwAR0euN5l_CgP4r7pn_l2XDGY6RCinwliK_5XHh5e6Ff2nRfLBtFTEy7G2NY"><br><br><b>Click
+                  to watch the video</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/science-daily-3.jpg" alt="Science Daily" class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>Common nutrient supplementation may hold the answers to combating Alzheimer's disease</h3>
+            <h5><i>September 27, 2019</i></h5>
+            <p class="w3-opacity">In a new study, Biodesign researchers reveal that a lifelong dietary regimen of
+              choline holds the potential to prevent Alzheimer's disease (AD). Choline is a safe and easy-to-administer
+              nutrient that is naturally present in some foods and can be used as a dietary supplement. Lead author
+              Ramon Velazquez and his colleagues at the ASU-Banner Neurodegenerative Disease Research Center (NDRC)
+              looked into whether this nutrient could alleviate the effects of Alzheimer's.<a
+                href="https://www.sciencedaily.com/releases/2019/09/190927122526.htm"><br><br><b>Click to read the full
+                  article</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/choline_salvo-ramon_dec2018.jpg" alt="Choline and transgenerational benefits"
+            class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>Essential nutrient may help fight Alzheimer's across generations</h3>
+            <h5><i>January 8, 2019</i></h5>
+            <p class="w3-opacity">Researchers are exploring a safe and simple treatment for one of the most devastating
+              and perplexing afflictions: Alzheimer's disease (AD). They are investigatign the effects of choline, an
+              important nutrient that may hold promise in the war against the memory-stealing disorder. The study
+              focuses on mice bred to display Alzheimer’s-like symptoms. Results demonstrate that when these mice are
+              given high choline in their diet, their offspring show improvements in spatial memory, compared with those
+              receiving a normal choline regimen in the womb.<a
+                href="https://www.sciencedaily.com/releases/2019/01/190108084424.htm"><br><br><b>Click to read the full
+                  article on Science Daily</b></a><br><a
+                href="https://news.asu.edu/20190108-essential-nutrient-may-help-fight-alzheimers-across-generations"><b>Click
+                  to read the full article on ASU News</b></a></p>
+          </div>
+        </div>
+
+        <div class="w3-row">
+          <img src="index/StruppVelazquez9-11.jpg" alt="" class="w3-third w3-border w3-image">
+          <div class="w3-twothird news-text">
+            <h3>More choline for mom decreases Down syndrome effects</h3>
+            <h5><i>September 11, 2013</i></h5>
+            <p class="w3-opacity">Down syndrome fetuses dramatically benefit when their mothers increase their intake of
+              the nutrient choline during pregnancy and nursing, report Cornell researchers in the journal Neurobiology
+              of Disease. Increased choline by moms bolsters brain functions and plays a profound health role for Down
+              syndrome offspring throughout their lives. Increased maternal choline intake improves spatial cognition
+              and attention, and delays aging-related memory decline in normal laboratory rats. The present findings
+              with Down syndrome mice indicate that increased maternal choline consumption may also lessen the
+              impairment of individuals with Down syndrome and reduce the risk of Alzheimer’s disease, which is seen in
+              nearly all Down syndrome individuals.<a
+                href="https://news.cornell.edu/stories/2013/09/more-choline-mom-decreases-down-syndrome-effects"><br><br><b>Click
+                  to read the full article</b></a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="#">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a
+          href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <p><a href="#">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
-</div>
-
-<!-- Script to open and close sidebar -->
-<script src="sidebar.js"></script>
+  <!-- Script to open and close sidebar -->
+  <script src="sidebar.js"></script>
 
 </body>
+
 </html>

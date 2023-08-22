@@ -11,22 +11,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-.poster img {
-  margin-top: 10px;
-}
-.poster div {
-  padding: 8px 16px 8px 16px;
-}
-.poster p {
-  margin-top: 2px;
-}
-.picture-grid {
-  margin-left: -16px;
-  margin-right: -16px;
-}
-div.picture-grid > div {
-  padding: 16px;
-}
+  .poster img {
+    margin-top: 10px;
+  }
+
+  .poster div {
+    padding: 8px 16px 8px 16px;
+  }
+
+  .poster p {
+    margin-top: 2px;
+  }
+
+  .picture-grid {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  div.picture-grid>div {
+    padding: 16px;
+  }
 </style>
 
 <head>
@@ -43,200 +47,294 @@ div.picture-grid > div {
 
 <body>
 
-<!-- Header -->
-<header class="w3-dark-grey w3-top w3-text-white">
-  <div class="w3-main w3-display-container" style="height: 50px;">
-    <a href="javascript:void(0)" class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey" onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
-    <div class="w3-display-middle">
-      <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative Diseases - VLoND</b></h3>
+  <!-- Header -->
+  <header class="w3-dark-grey w3-top w3-text-white">
+    <div class="w3-main w3-display-container" style="height: 50px;">
+      <a href="javascript:void(0)"
+        class="w3-button w3-display-left w3-hide-large w3-hover-text-orange w3-text-white w3-hover-black w3-dark-grey"
+        onclick="open_sidebar()"><i class="fa fa-bars"></i></a>
+      <div class="w3-display-middle">
+        <h3 class="w3-hide-small" style="white-space: nowrap; overflow: hidden;"><b>Velazquez Lab of Neurodegenerative
+            Diseases - VLoND</b></h3>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- Sidebar -->
-<nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large w3-center" style="z-index: 3;">
-  <a href="javascript:void(0)" onclick="close_sidebar()" class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close Menu</a>
-  <div class="w3-container w3-padding-32">
-    <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
-  </div>
-  <!-- Tell our JS what page this is -->
-  <div id="page-id">studentsuccess.html</div>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu" id="overlay"></div>
-
-<!-- Indent main content -->
-<div class="w3-main">
-  <div id="content" class="w3-content">
-    <h1><b>Student Success</b></h1>
-	
-	<h5 style="padding-bottom: 32px">Dr. Velazquez prides himself on mentoring the next generation of scientists and medical professionals. We are very proud of the accomplishments made by students that received training in the Velazquez lab</h5>
-	
-	<div class="picture-grid">
-		<div>
-		  <iframe class="w3-border" width="560" height="315" src="https://www.youtube-nocookie.com/embed/JoZjFzeyXxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<div>
-		  <img src="student_success/velazquez_and_samantha.png" alt="Dr. Velazquez and PhD student Samantha Bartholomew presenting her research at the Arizona Alzheimer’s Consortium meeting, September 2022" class="w3-border w3-image">
-		  <p class="w3-opacity">Dr. Velazquez and PhD student Samantha Bartholomew presenting <br>her research at the Arizona Alzheimer’s Consortium meeting, September 2022</p>
-		</div>
-		<div>
-		  <img src="student_success/velazquez_lab_members_presenting.png" alt="Members of the Velazquez lab present their research at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022). Pictured from left: Wendy Winslow, Jessica Judd PhD, Joanna Winstone, Samantha K Bartholomew, Savannah Tallino." class="w3-border w3-image">
-		  <p class="w3-opacity">Members of the Velazquez lab present their research at the <br>Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022). <br><i>Pictured from left: Wendy Winslow, Jessica Judd PhD, <br>Joanna Winstone, Samantha K Bartholomew, Savannah Tallino.</i></p>
-		</div>
-		<div>
-		  <img src="student_success/velazquez_lab_dinner.png" alt="Velazquez lab dinner in Little Italy to celebrate a successful<br> Society for Neuroscience 2022 meeting in San Diego Ca." class="w3-border w3-image">
-		  <p class="w3-opacity">Velazquez lab dinner in Little Italy to celebrate a successful<br> Society for Neuroscience 2022 meeting in San Diego Ca.</p>
-		</div>
-		<div>
-		  <img src="student_success/savannah_and_samantha_in_san_diego.png" alt="PhD students Samantha K Bartholomew and Savannah Tallino excited to attend their first in-person Society for Neuroscience 2022 meeting in San Diego Ca." class="w3-border w3-image">
-		  <p class="w3-opacity">PhD students Samantha K Bartholomew and<br> Savannah Tallino excited to attend their first in-person<br> Society for Neuroscience 2022 meeting in San Diego Ca.</p>
-		</div>
-		<div>
-		  <img src="student_success/Savannah_Tallino_presents_at_SFN_2022.png" alt="PhD student Savannah Tallino presents her research on choline supplementation in a Down syndrome model at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022)." class="w3-border w3-image">
-		  <p class="w3-opacity">PhD student Savannah Tallino presents her research on choline supplementation in a <br>Down syndrome model at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022).</i></p>
-		</div>
-		<div>
-		  <img src="student_success/samantha_presenting_in_san_diego.png" alt="PhD student Samantha K Bartholomew presents her research on a novel Dyrk1a inhibitor at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022)." class="w3-border w3-image">
-		  <p class="w3-opacity">PhD student Samantha K Bartholomew presents her<br>research on a novel Dyrk1a inhibitor at the <br>Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022).</p>
-		</div>
-		<div>
-		  <img src="student_success/wendy_presenting_in_san_diego.png" alt="Lab scientist Wendy Winslow presents her research on amyloid-beta progression in a mouse model of Down syndrome at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022)." class="w3-border w3-image">
-		  <p class="w3-opacity">Lab scientist Wendy Winslow presents her research on amyloid-beta<br> progression in a mouse model of Down syndrome at the <br>Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022).</p>
-		</div>
-	</div>
-
-	<h1 class="w3-padding-top-32"><b>Success Stories</b></h1>
-	
-	<h3 class="w3-padding-top-32">Nikhil Dave</h3>
-    <div class="w3-row">
-      <img src="student_success/nikhil_dave_2.png" alt="Nikhil Dave" class="w3-quarter w3-image w3-border">
-      <p class="w3-threequarter w3-opacity w3-padding">
-		I have worked under Dr. Velazquez’s mentorship for 7 years, and despite my graduation and departure from Arizona will continue to work with Ramon on projects that we have been collaborating on for over 5 years. In my 7 years in the Velazquez Lab, I refined my ability to write scientific literature, performed and designed complicated biochemical and bioinformatic experiments, and most of all gained a deep understanding of what it means to do good, rigorous science. During my time in the lab, I have been a second author on two papers <i>(Neurobiology of Aging, Molecular Psychiatry)</i> and a first author on two high-impact papers <i>(Acta Neuropathologica, Second Paper in Submission)</i>.
-		<br><br>
-		Outside of the lab, I worked in the Luminosity Lab - ASU’s highly-selective interdisciplinary research & development laboratory - where I led our portfolio of >10 projects around innovations in health and medicine. Here, I published two pre-print articles, submitted two pending patent applications, and led a team to win the $1M XPRIZE Next-Gen Mask Challenge, an international innovation competition drawing nearly 1,000 teams across 70 countries. I was also appointed to the Arizona Board of Regents by Arizona Governor Doug Ducey in 2020 to serve a two-year term on the governing board of Arizona’s three public universities. There, I served on the Research and Health Sciences Committee, as the Co-Chair of the Student Food and Housing Insecurity Working Group, and as the Assistant Treasurer.
-		<br><br>
-		Upon graduation, I am moving to Chicago to work as a Business Analyst for McKinsey & Company, the world’s premier management consulting firm. I hope to gain critical business acumen in my time at McKinsey and couple this with my robust experience in research and development in bioscience to bring new life-saving innovations to market in the future. 
-      </p>
+  <!-- Sidebar -->
+  <nav id="sidebar" class="w3-sidebar w3-collapse w3-bar-block w3-dark-grey w3-large w3-center" style="z-index: 3;">
+    <a href="javascript:void(0)" onclick="close_sidebar()"
+      class="w3-bar-item w3-button w3-hide-large w3-padding w3-hover-text-orange w3-hover-black w3-dark-grey">Close
+      Menu</a>
+    <div class="w3-container w3-padding-32">
+      <a href="https://biodesign.asu.edu/"><img src="asulogo.png" alt="ASU Logo" style="width: 100%;"></a>
     </div>
-	
-	<h3 class="w3-padding-top-32">Mara-Clarisa Boiangiu</h3>
-    <div class="w3-row">
-      <img src="student_success/mara.png" alt="Mara-Clarisa Boiangiu" class="w3-quarter w3-image w3-border">
-      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez's guidance the past two and a half years, I was granted the ability to not only learn more about the field of neuroscience, but understand the process behind innovative therapeutic targets and drug discovery. Through immersion in laboratory facilitation, projects and completion of my own honors thesis, I gained analytical and critical thinking skills that will benefit me in my future endeavors. Most importantly, I learned the responsibilities of what being a researcher entails and am extremely grateful for the opportunity to have been a part of new developments in the field of neurodegenerative diseases.
-		<br><br>
-        In Fall 2022, I will be attending Georgetown University to complete a Masters of Science in Global Health concentrated in Health Policy and Development prior to application to medical school. 
-		</p>
-    </div>
+    <!-- Tell our JS what page this is -->
+    <div id="page-id">studentsuccess.html</div>
+  </nav>
 
-	<h3 class="w3-padding-top-32">Oscar Villareal</h3>
-    <div class="w3-row">
-      <img src="student_success/oscar.png" alt="Oscar Villareal" class="w3-quarter w3-image w3-border">
-      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship, I was able to get out of my comfort zone and really start being proactive and efficient not only in the lab, but also in my professional, academic, and personal life. I was able to challenge my intellectual abilities and gained the knowledge and skills to think outside of the box and contribute to the field of Alzheimer’s disease. In addition, I had the amazing opportunity to expand my laboratory skillset and learn more about neuroscience-related research and other fields such as hepatology. The opportunity of having someone who can relate to me, and my struggles, has been an inspiration that allowed me to work hard to achieve my goals, all while having fun throughout the process. Working in this lab has been nothing but a pleasure, and I thank everyone for such a memorable stage in my career.
-        <br><br>
-        In the Fall of 2022, I will be attending Medical School. Although I have not yet decided on the institution I will be attending, my top choices are the Icahn School of Medicine at Mt. Sinai, University of Arizona College of Medicine Tucson, University of Illinois College of Medicine, and Rutgers Robert Wood Johnson College of Medicine.
-      </p>
-    </div>
-	
-	<h3 class="w3-padding-top-32">Marc A. Mifflin</h3>
-    <div class="w3-row">
-      <img src="student_success/marc_a_mifflin.png" alt="Marc A. Mifflin" class="w3-quarter w3-image w3-border">
-      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship, I was able to learn about scientific inquiries of neurodegenerative diseases. This afforded me the unique opportunity to apply the knowledge gained to practical tasks, and to see first-hand the impact of variables and conditions on outcomes. I was able to work collaboratively with other students and researchers while writing my honors thesis and preparing first-author publications. After graduation in 2020, my family and I relocated from Arizona to Ohio.
-        <br><br>
-        I am currently (2023) working in the medical field in a large city hospital in my hometown in Ohio and looking to further my education with a Masters degree in anesthesia. 
-      </p>
-    </div>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="close_sidebar()" style="cursor:pointer" title="close side menu"
+    id="overlay"></div>
 
-    <h3 class="w3-padding-top-32">Likith Surendra</h3>
-    <div class="w3-row">
-      <img src="student_success/likith_surendra.png" alt="Likith Surendra" class="w3-quarter w3-image w3-border">
-      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez's mentorship, I had the opportunity to contribute meaningfully to innovative projects exploring neurodegenerative disease processes and complete my honors thesis. I developed an appreciation for the scientific research process and gained valuable research, writing, presentation, and critical thinking skills that I will apply to my future research endeavors.
-        <br><br>
-        I am currently (2021) a medical student at the University of Arizona College of Medicine – Phoenix
-      </p>
-    </div>
+  <!-- Indent main content -->
+  <div class="w3-main">
+    <div id="content" class="w3-content">
+      <h1><b>Student Success</b></h1>
 
-    <h3 class="w3-padding-top-32">An Tran</h3>
-    <div class="w3-row">
-      <img src="student_success/an_tran.png" alt="An Tran" class="w3-quarter w3-image w3-border">
-      <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship and guidance, I gained invaluable knowledge of not only neuroscience and research, but also an abundance of confidence, grit, and conscientiousness. Currently, I am a clinical researcher applying my learned skills and expertise to research related to the COVID-19 vaccine, Alzheimer's disease and dementia. 
-        <br><br>
-        In Fall 2021, I will be attending Georgetown University in pursuit of a Master of Science in Nursing degree, with the ultimate goal of promoting health equity and social justice in healthcare
+      <h5 style="padding-bottom: 32px">Dr. Velazquez prides himself on mentoring the next generation of scientists and
+        medical professionals. We are very proud of the accomplishments made by students that received training in the
+        Velazquez lab</h5>
+
+      <div class="picture-grid">
+        <div>
+          <iframe class="w3-border" width="560" height="315" src="https://www.youtube-nocookie.com/embed/JoZjFzeyXxw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div>
+          <img src="student_success/velazquez_and_samantha.png"
+            alt="Dr. Velazquez and PhD student Samantha Bartholomew presenting her research at the Arizona Alzheimer’s Consortium meeting, September 2022"
+            class="w3-border w3-image">
+          <p class="w3-opacity">Dr. Velazquez and PhD student Samantha Bartholomew presenting <br>her research at the
+            Arizona Alzheimer’s Consortium meeting, September 2022</p>
+        </div>
+        <div>
+          <img src="student_success/velazquez_lab_members_presenting.png"
+            alt="Members of the Velazquez lab present their research at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022). Pictured from left: Wendy Winslow, Jessica Judd PhD, Joanna Winstone, Samantha K Bartholomew, Savannah Tallino."
+            class="w3-border w3-image">
+          <p class="w3-opacity">Members of the Velazquez lab present their research at the <br>Society for Neuroscience
+            2022 meeting in San Diego Ca (Nov. 14th, 2022). <br><i>Pictured from left: Wendy Winslow, Jessica Judd PhD,
+              <br>Joanna Winstone, Samantha K Bartholomew, Savannah Tallino.</i></p>
+        </div>
+        <div>
+          <img src="student_success/velazquez_lab_dinner.png"
+            alt="Velazquez lab dinner in Little Italy to celebrate a successful<br> Society for Neuroscience 2022 meeting in San Diego Ca."
+            class="w3-border w3-image">
+          <p class="w3-opacity">Velazquez lab dinner in Little Italy to celebrate a successful<br> Society for
+            Neuroscience 2022 meeting in San Diego Ca.</p>
+        </div>
+        <div>
+          <img src="student_success/savannah_and_samantha_in_san_diego.png"
+            alt="PhD students Samantha K Bartholomew and Savannah Tallino excited to attend their first in-person Society for Neuroscience 2022 meeting in San Diego Ca."
+            class="w3-border w3-image">
+          <p class="w3-opacity">PhD students Samantha K Bartholomew and<br> Savannah Tallino excited to attend their
+            first in-person<br> Society for Neuroscience 2022 meeting in San Diego Ca.</p>
+        </div>
+        <div>
+          <img src="student_success/Savannah_Tallino_presents_at_SFN_2022.png"
+            alt="PhD student Savannah Tallino presents her research on choline supplementation in a Down syndrome model at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022)."
+            class="w3-border w3-image">
+          <p class="w3-opacity">PhD student Savannah Tallino presents her research on choline supplementation in a
+            <br>Down syndrome model at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022).</i>
+          </p>
+        </div>
+        <div>
+          <img src="student_success/samantha_presenting_in_san_diego.png"
+            alt="PhD student Samantha K Bartholomew presents her research on a novel Dyrk1a inhibitor at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022)."
+            class="w3-border w3-image">
+          <p class="w3-opacity">PhD student Samantha K Bartholomew presents her<br>research on a novel Dyrk1a inhibitor
+            at the <br>Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022).</p>
+        </div>
+        <div>
+          <img src="student_success/wendy_presenting_in_san_diego.png"
+            alt="Lab scientist Wendy Winslow presents her research on amyloid-beta progression in a mouse model of Down syndrome at the Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th, 2022)."
+            class="w3-border w3-image">
+          <p class="w3-opacity">Lab scientist Wendy Winslow presents her research on amyloid-beta<br> progression in a
+            mouse model of Down syndrome at the <br>Society for Neuroscience 2022 meeting in San Diego Ca (Nov. 14th,
+            2022).</p>
+        </div>
+      </div>
+
+      <h1 class="w3-padding-top-32"><b>Success Stories</b></h1>
+
+      <h3 class="w3-padding-top-32">Nikhil Dave</h3>
+      <div class="w3-row">
+        <img src="student_success/nikhil_dave_2.png" alt="Nikhil Dave" class="w3-quarter w3-image w3-border">
+        <p class="w3-threequarter w3-opacity w3-padding">
+          I have worked under Dr. Velazquez’s mentorship for 7 years, and despite my graduation and departure from
+          Arizona will continue to work with Ramon on projects that we have been collaborating on for over 5 years. In
+          my 7 years in the Velazquez Lab, I refined my ability to write scientific literature, performed and designed
+          complicated biochemical and bioinformatic experiments, and most of all gained a deep understanding of what it
+          means to do good, rigorous science. During my time in the lab, I have been a second author on two papers
+          <i>(Neurobiology of Aging, Molecular Psychiatry)</i> and a first author on two high-impact papers <i>(Acta
+            Neuropathologica, Second Paper in Submission)</i>.
+          <br><br>
+          Outside of the lab, I worked in the Luminosity Lab - ASU’s highly-selective interdisciplinary research &
+          development laboratory - where I led our portfolio of >10 projects around innovations in health and medicine.
+          Here, I published two pre-print articles, submitted two pending patent applications, and led a team to win the
+          $1M XPRIZE Next-Gen Mask Challenge, an international innovation competition drawing nearly 1,000 teams across
+          70 countries. I was also appointed to the Arizona Board of Regents by Arizona Governor Doug Ducey in 2020 to
+          serve a two-year term on the governing board of Arizona’s three public universities. There, I served on the
+          Research and Health Sciences Committee, as the Co-Chair of the Student Food and Housing Insecurity Working
+          Group, and as the Assistant Treasurer.
+          <br><br>
+          Upon graduation, I am moving to Chicago to work as a Business Analyst for McKinsey & Company, the world’s
+          premier management consulting firm. I hope to gain critical business acumen in my time at McKinsey and couple
+          this with my robust experience in research and development in bioscience to bring new life-saving innovations
+          to market in the future.
         </p>
+      </div>
+
+      <h3 class="w3-padding-top-32">Mara-Clarisa Boiangiu</h3>
+      <div class="w3-row">
+        <img src="student_success/mara.png" alt="Mara-Clarisa Boiangiu" class="w3-quarter w3-image w3-border">
+        <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez's guidance the past two and a half years, I
+          was granted the ability to not only learn more about the field of neuroscience, but understand the process
+          behind innovative therapeutic targets and drug discovery. Through immersion in laboratory facilitation,
+          projects and completion of my own honors thesis, I gained analytical and critical thinking skills that will
+          benefit me in my future endeavors. Most importantly, I learned the responsibilities of what being a researcher
+          entails and am extremely grateful for the opportunity to have been a part of new developments in the field of
+          neurodegenerative diseases.
+          <br><br>
+          In Fall 2022, I will be attending Georgetown University to complete a Masters of Science in Global Health
+          concentrated in Health Policy and Development prior to application to medical school.
+        </p>
+      </div>
+
+      <h3 class="w3-padding-top-32">Oscar Villareal</h3>
+      <div class="w3-row">
+        <img src="student_success/oscar.png" alt="Oscar Villareal" class="w3-quarter w3-image w3-border">
+        <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship, I was able to get out of my
+          comfort zone and really start being proactive and efficient not only in the lab, but also in my professional,
+          academic, and personal life. I was able to challenge my intellectual abilities and gained the knowledge and
+          skills to think outside of the box and contribute to the field of Alzheimer’s disease. In addition, I had the
+          amazing opportunity to expand my laboratory skillset and learn more about neuroscience-related research and
+          other fields such as hepatology. The opportunity of having someone who can relate to me, and my struggles, has
+          been an inspiration that allowed me to work hard to achieve my goals, all while having fun throughout the
+          process. Working in this lab has been nothing but a pleasure, and I thank everyone for such a memorable stage
+          in my career.
+          <br><br>
+          In the Fall of 2022, I will be attending Medical School. Although I have not yet decided on the institution I
+          will be attending, my top choices are the Icahn School of Medicine at Mt. Sinai, University of Arizona College
+          of Medicine Tucson, University of Illinois College of Medicine, and Rutgers Robert Wood Johnson College of
+          Medicine.
+        </p>
+      </div>
+
+      <h3 class="w3-padding-top-32">Marc A. Mifflin</h3>
+      <div class="w3-row">
+        <img src="student_success/marc_a_mifflin.png" alt="Marc A. Mifflin" class="w3-quarter w3-image w3-border">
+        <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship, I was able to learn about
+          scientific inquiries of neurodegenerative diseases. This afforded me the unique opportunity to apply the
+          knowledge gained to practical tasks, and to see first-hand the impact of variables and conditions on outcomes.
+          I was able to work collaboratively with other students and researchers while writing my honors thesis and
+          preparing first-author publications. After graduation in 2020, my family and I relocated from Arizona to Ohio.
+          <br><br>
+          I am currently (2023) working in the medical field in a large city hospital in my hometown in Ohio and looking
+          to further my education with a Masters degree in anesthesia.
+        </p>
+      </div>
+
+      <h3 class="w3-padding-top-32">Likith Surendra</h3>
+      <div class="w3-row">
+        <img src="student_success/likith_surendra.png" alt="Likith Surendra" class="w3-quarter w3-image w3-border">
+        <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez's mentorship, I had the opportunity to
+          contribute meaningfully to innovative projects exploring neurodegenerative disease processes and complete my
+          honors thesis. I developed an appreciation for the scientific research process and gained valuable research,
+          writing, presentation, and critical thinking skills that I will apply to my future research endeavors.
+          <br><br>
+          I am currently (2021) a medical student at the University of Arizona College of Medicine – Phoenix
+        </p>
+      </div>
+
+      <h3 class="w3-padding-top-32">An Tran</h3>
+      <div class="w3-row">
+        <img src="student_success/an_tran.png" alt="An Tran" class="w3-quarter w3-image w3-border">
+        <p class="w3-threequarter w3-opacity w3-padding">Under Dr. Velazquez’s mentorship and guidance, I gained
+          invaluable knowledge of not only neuroscience and research, but also an abundance of confidence, grit, and
+          conscientiousness. Currently, I am a clinical researcher applying my learned skills and expertise to research
+          related to the COVID-19 vaccine, Alzheimer's disease and dementia.
+          <br><br>
+          In Fall 2021, I will be attending Georgetown University in pursuit of a Master of Science in Nursing degree,
+          with the ultimate goal of promoting health equity and social justice in healthcare
+        </p>
+      </div>
+
+      <h1 class="w3-padding-top-32"><b>Posters</b></h1>
+      <h5>Our students presented at the 2021 ASU Biodesign retreat, and our very own Nikhil Dave was selected for the 2
+        min Rapid Fire competition</h5>
+
+      <h3 class="w3-padding-top-32">Mena Abudllah's Poster</h3>
+      <div class="w3-row poster">
+        <img src="student_success/mena.png" alt="Mena Abudllah" class="w3-image w3-border w3-quarter">
+        <div class="w3-threequarter">
+          <object data="student_success/Mena_NIH_poster_presentation_MA_final.pdf" type="application/pdf"
+            width="100%" height="500px">
+            <p>Your web browser doesn't have a PDF plugin.
+              Instead you can click the link below to download the PDF file.</p>
+          </object>
+          <p class="w3-opacity"><a href="student_success/Mena_NIH_poster_presentation_MA_final.pdf"
+              target="_blank">Click to Open the Poster in a New Tab</a></p>
+        </div>
+      </div>
+
+      <h3 class="w3-padding-top-32">Samantha Bartholomew's Poster</h3>
+      <div class="w3-row poster">
+        <img src="student_success/samantha.png" alt="Samantha Bartholomew" class="w3-image w3-border w3-quarter">
+        <div class="w3-threequarter">
+          <object data="student_success/FINAL.AAC_2022_Poster_SB_RV_Draft 4_RVfinal.pdf" type="application/pdf"
+            width="100%" height="500px">
+            <p>Your web browser doesn't have a PDF plugin.
+              Instead you can click the link below to download the PDF file.</p>
+          </object>
+          <p class="w3-opacity"><a href="student_success/FINAL.AAC_2022_Poster_SB_RV_Draft 4_RVfinal.pdf"
+              target="_blank">Click to Open the Poster in a New Tab</a></p>
+        </div>
+      </div>
+
+      <h3 class="w3-padding-top-32">Jessica Judd's Poster</h3>
+      <div class="w3-row poster">
+        <img src="student_success/jessica.png" alt="Jessica Judd" class="w3-image w3-border w3-quarter">
+        <div class="w3-threequarter">
+          <object data="student_success/AAC_Choline_Def_Poster_v3.pdf" type="application/pdf" width="100%"
+            height="500px">
+            <p>Your web browser doesn't have a PDF plugin.
+              Instead you can click the link below to download the PDF file.</p>
+          </object>
+          <p class="w3-opacity"><a href="student_success/AAC_Choline_Def_Poster_v3.pdf" target="_blank">Click to Open
+              the Poster in a New Tab</a></p>
+        </div>
+      </div>
+
+      <h3 class="w3-padding-top-32">Nikhil Dave's Poster</h3>
+      <div class="w3-row poster">
+        <img src="student_success/nikhil_dave_1.png" alt="Nikhil Dave" class="w3-image w3-border w3-quarter">
+        <div class="w3-threequarter">
+          <object data="student_success/Dave_&_Velazquez_et_al._Biodesign_Fusion_Poster_FINAL.pdf"
+            type="application/pdf" width="100%" height="500px">
+            <p>Your web browser doesn't have a PDF plugin.
+              Instead you can click the link below to download the PDF file.</p>
+          </object>
+          <p class="w3-opacity"><a href="student_success/Dave_&_Velazquez_et_al._Biodesign_Fusion_Poster_FINAL.pdf"
+              target="_blank">Click to Open the Poster in a New Tab</a></p>
+        </div>
+      </div>
+
+      <h3 class="w3-padding-top-32">Savannah Tallino's Poster</h3>
+      <div class="w3-row poster">
+        <img src="student_success/savannah_tallino.png" alt="Savannah Tallino" class="w3-image w3-border w3-quarter">
+        <div class="w3-threequarter">
+          <object data="student_success/BNI_Symposium_Poster_2022_FINAL.2.pdf" type="application/pdf" width="100%"
+            height="500px">
+            <p>Your web browser doesn't have a PDF plugin.
+              Instead you can click the link below to download the PDF file.</p>
+          </object>
+          <p class="w3-opacity"><a href="student_success/BNI_Symposium_Poster_2022_FINAL.2.pdf" target="_blank">Click to
+              Open the Poster in a New Tab</a></p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a
+            href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </footer>
     </div>
 
-    <h1 class="w3-padding-top-32"><b>Posters</b></h1>
-    <h5>Our students presented at the 2021 ASU Biodesign retreat, and our very own Nikhil Dave was selected for the 2 min Rapid Fire competition</h5>
-	
-	<h3 class="w3-padding-top-32">Samantha Bartholomew's Poster</h3>
-    <div class="w3-row poster">
-      <img src="student_success/samantha.png" alt="Samantha Bartholomew" class="w3-image w3-border w3-quarter">
-      <div class="w3-threequarter">
-        <object data="student_success/FINAL.AAC_2022_Poster_SB_RV_Draft 4_RVfinal.pdf" type="application/pdf" width="100%" height="500px">
-          <p>Your web browser doesn't have a PDF plugin.
-            Instead you can click the link below to download the PDF file.</p>
-        </object>
-        <p class="w3-opacity"><a href="student_success/FINAL.AAC_2022_Poster_SB_RV_Draft 4_RVfinal.pdf" target="_blank">Click to Open the Poster in a New Tab</a></p>
-      </div>
-    </div>
-	
-	<h3 class="w3-padding-top-32">Jessica Judd's Poster</h3>
-    <div class="w3-row poster">
-      <img src="student_success/jessica.png" alt="Jessica Judd" class="w3-image w3-border w3-quarter">
-      <div class="w3-threequarter">
-        <object data="student_success/AAC_Choline_Def_Poster_v3.pdf" type="application/pdf" width="100%" height="500px">
-          <p>Your web browser doesn't have a PDF plugin.
-            Instead you can click the link below to download the PDF file.</p>
-        </object>
-        <p class="w3-opacity"><a href="student_success/AAC_Choline_Def_Poster_v3.pdf" target="_blank">Click to Open the Poster in a New Tab</a></p>
-      </div>
-    </div>
-    
-    <h3 class="w3-padding-top-32">Nikhil Dave's Poster</h3>
-    <div class="w3-row poster">
-      <img src="student_success/nikhil_dave_1.png" alt="Nikhil Dave" class="w3-image w3-border w3-quarter">
-      <div class="w3-threequarter">
-        <object data="student_success/Dave_&_Velazquez_et_al._Biodesign_Fusion_Poster_FINAL.pdf" type="application/pdf" width="100%" height="500px">
-          <p>Your web browser doesn't have a PDF plugin.
-            Instead you can click the link below to download the PDF file.</p>
-        </object>
-        <p class="w3-opacity"><a href="student_success/Dave_&_Velazquez_et_al._Biodesign_Fusion_Poster_FINAL.pdf" target="_blank">Click to Open the Poster in a New Tab</a></p>
-      </div>
-    </div>
-
-    <h3 class="w3-padding-top-32">Joanna Winstone's Poster</h3>
-    <div class="w3-row poster">
-      <img src="student_success/joanna_winstone.png" alt="Joanna Winstone" class="w3-image w3-border w3-quarter">
-      <div class="w3-threequarter">
-        <object data="student_success/Glyphosate_Poster_Fusion2021_JKW03312021.pdf" type="application/pdf" width="100%" height="500px">
-          <p>Your web browser doesn't have a PDF plugin.
-            Instead you can click the link below to download the PDF file.</p>
-        </object>
-        <p class="w3-opacity"><a href="student_success/Glyphosate_Poster_Fusion2021_JKW03312021.pdf" target="_blank">Click to Open the Poster in a New Tab</a></p>
-      </div>
-    </div>
-
-    <h3 class="w3-padding-top-32">Savannah Tallino's Poster</h3>
-    <div class="w3-row poster">
-      <img src="student_success/savannah_tallino.png" alt="Savannah Tallino" class="w3-image w3-border w3-quarter">
-      <div class="w3-threequarter">
-        <object data="student_success/BNI_Symposium_Poster_2022_FINAL.2.pdf" type="application/pdf" width="100%" height="500px">
-          <p>Your web browser doesn't have a PDF plugin.
-            Instead you can click the link below to download the PDF file.</p>
-        </object>
-        <p class="w3-opacity"><a href="student_success/BNI_Symposium_Poster_2022_FINAL.2.pdf" target="_blank">Click to Open the Poster in a New Tab</a></p>
-      </div>
-    </div>
-    
-  <!-- Footer -->
-  <footer>
-    <p><a href="./index.html">Velazquez Lab of Neurodegenerative Diseases</a> © 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
-</div>
-
-<!-- Script to open and close sidebar -->
-<script src="sidebar.js"></script>
+    <!-- Script to open and close sidebar -->
+    <script src="sidebar.js"></script>
 
 </body>
+
 </html>
